@@ -2064,6 +2064,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../courses/professional/computing/formal_language/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    形式语言与自动机
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3106,45 +3129,45 @@
 <p>左上角的代码区1用于写一些比较长的代码，可以一次性运行多行；左下角的代码区2主要用于写比较简短的代码，主要用于单行运行；右上角的功能基本只会用到“environment”标签页，表明现在环境内变量有哪些，值是多少，因此可以叫它“变量区”；右下角的功能区一般用于展示图表、查询帮助等。</p>
 <h2 id="03">03 误差</h2>
 <p>本段中误差主要指随机误差。当我们想知道某个量 <span class="arithmatex">\(y\)</span> 的值时，我们无法直接得到 <span class="arithmatex">\(y\)</span> 的值，我们只能对这个值进行多次测量，得到一些测量值，用这些测量值的平均值用于估计 <span class="arithmatex">\(y\)</span> 的大小。</p>
-<div class="arithmatex">\[
+<p>$$
 \bar{y} = \dfrac{1}{n}\sum_{i=1}^n y_i
-\]</div>
+$$</p>
 <p>这个估计值和真实值有一定的差异，我们将这个差异叫做随机误差。</p>
 <p>根据中心极限定理，我们可以知道 <span class="arithmatex">\(y\)</span> 的测量值服从均值为 <span class="arithmatex">\(y\)</span>，方差未知的正态分布。（“～”表示服从某种分布）</p>
-<div class="arithmatex">\[
+<p>$$
 y_i \sim N(y, \sigma^2)
-\]</div>
+$$</p>
 <p>因此 <span class="arithmatex">\(y\)</span> 的均值也服从一个正态分布。</p>
-<div class="arithmatex">\[
+<p>$$
 \bar{y} \sim N(y, \sigma^2 / n)
-\]</div>
+$$</p>
 <p>这样，我们可以通过变换得到</p>
-<div class="arithmatex">\[
+<p>$$
 \dfrac{\bar{y} - y}{\sigma/\sqrt n} \sim N(0, 1)
-\]</div>
+$$</p>
 <p>根据高中知识，我们可以通过 <span class="arithmatex">\(y\)</span> 的测量值得到方差的估计量：</p>
-<div class="arithmatex">\[
+<p>$$
 s = \sqrt{\dfrac{1}{n-1}\sum_{i=1}^n (y_i - \bar{y})^2}
-\]</div>
+$$</p>
 <p>如果用 <span class="arithmatex">\(s\)</span> 替代正态分布中的 <span class="arithmatex">\(\sigma\)</span> 的话，我们可以得到</p>
-<div class="arithmatex">\[
+<p>$$
 \dfrac{\bar{y} - y}{s/\sqrt n} \sim t_{n-1}
-\]</div>
+$$</p>
 <p>这表明左面这个分数服从于自由度为 <span class="arithmatex">\(n-1\)</span> 的t分布。（t分布是一个轴对称的分布，在n趋近于无穷大的时候趋近于标准正态分布 <span class="arithmatex">\(N(0,1)\)</span>。这个分布会在概率论与数理统计中学习，或者大家可以参见百度百科）</p>
 <p>假如我们的置信概率为 <span class="arithmatex">\(p\)</span>，这表明</p>
-<div class="arithmatex">\[
+<p>$$
 P(y - \frac{s}{\sqrt n} t_{n-1, p}\leq\bar{y}\leq y + \frac{s}{\sqrt n}t_{n-1,p}) = p
-\]</div>
+$$</p>
 <p>此时我们反解y的区间，就可以得到y的一个置信区间为</p>
-<div class="arithmatex">\[
+<p>$$
 \left[
     \bar y - \frac{s}{\sqrt n}t_{n-1, p}, \bar y + \frac{s}{\sqrt n}t_{n-1, p}
 \right]
-\]</div>
+$$</p>
 <p>因此我们可以得到A类分量（名词来自基物实验绪论课课件）的表达式</p>
-<div class="arithmatex">\[
+<p>$$
 U_A = \dfrac{s}{\sqrt n}t_{n-1, p}
-\]</div>
+$$</p>
 <h2 id="04">04 代码实现</h2>
 <p>说了这么多，下面我们通过R语言来实际计算一次不确定度吧！</p>
 <p><strong>例子</strong>：用螺旋测微计测某一钢丝的直径d，6次测量值分别为0.249，0.243，0.247，0.250，0.253，0.250。已知测微计的零位（零点）读数值（已定系差）：0.003, 误差限：ΔINS=0.004。请给出完整的测量结果。（单位：mm）</p>
@@ -3169,9 +3192,9 @@ U_A = \dfrac{s}{\sqrt n}t_{n-1, p}
 <p>计算“t因子”。需要注意的是，根据对称性，我们可以得到下面这个式子</p>
 </li>
 </ol>
-<div class="arithmatex">\[
+<p>$$
 P(\bar y \leq y+\frac{s}{\sqrt n}t_{n-1, p}) = \dfrac{1+p}{2}
-\]</div>
+$$</p>
 <p>在R语言中，对于上面这种定义方式，计算p因子的命令就是 <code>qt((1+p)/2,n-1)</code>。（<span class="arithmatex">\((1+p)/2\)</span>就是上面图片中等式右面的值）在本例子中，命令即为 <code>qt(0.975,5)</code>，按回车。</p>
 <p>值得注意的是，如果大家想在中间暂存某些数字，可以采用如 <code>a=qt(0.975,5)</code> 这种命令，就代表把t因子的值存给了<code>a</code>，此时右上角的变量区也会显示出现了一个新的变量 <code>a</code> 以及它的值。</p>
 <ol>
