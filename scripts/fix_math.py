@@ -114,13 +114,15 @@ def process_markdown_file(file_path, dry_run=False):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="针对指定的Markdown文件，进行精确的LaTeX数学区块修复。",
+        description="针对指定的Markdown文件或目录，进行精确的LaTeX数学区块修复。",
         formatter_class=argparse.RawTextHelpFormatter
     )
+    # 参数现在是 'path'，可以接受一个文件或目录，默认为当前目录
     parser.add_argument(
-        "files", 
-        nargs='+',
-        help="一个或多个要处理的 .md 文件的路径。"
+        "path", 
+        nargs='?', # '?' 表示0个或1个参数
+        default='.', # 如果不提供参数，则默认为 '.' (当前目录)
+        help="要处理的文件或目录的路径 (默认为当前目录)。"
     )
     parser.add_argument(
         "--dry-run",
@@ -129,27 +131,51 @@ def main():
     )
     args = parser.parse_args()
 
+    target_path = args.path
+
     if args.dry_run:
         print("--- 演习模式 (DRY RUN) 已开启：将不会对文件进行任何修改。 ---\n")
 
+    files_to_process = []
+    # 检查路径是目录、文件还是不存在
+    if os.path.isdir(target_path):
+        print(f"🚀 正在扫描目录: {os.path.abspath(target_path)}")
+        for root, _, files in os.walk(target_path):
+            for file_name in files:
+                if file_name.endswith('.md'):
+                    files_to_process.append(os.path.join(root, file_name))
+    elif os.path.isfile(target_path):
+        if target_path.endswith('.md'):
+            files_to_process.append(target_path)
+        else:
+            print(f"错误: 文件 '{target_path}' 不是一个Markdown (.md) 文件。")
+            return
+    else:
+        print(f"错误: 路径 '{target_path}' 不是一个有效的文件或目录。")
+        return
+
+    if not files_to_process:
+        print("在指定路径中没有找到要处理的 .md 文件。")
+        return
+
     total_files_changed = 0
-    for file_path in args.files:
-        if not os.path.isfile(file_path):
-            print(f"跳过: '{file_path}' 不是一个有效的文件。")
-            continue
-        
-        print(f"🚀 正在处理文件: {file_path}")
+    total_files_scanned = len(files_to_process)
+
+    # 循环处理收集到的所有文件
+    for file_path in files_to_process:
+        print(f"🔎 正在处理文件: {file_path}")
         if process_markdown_file(file_path, args.dry_run):
             total_files_changed += 1
     
     print("\n--- 处理完成 ---")
+    print(f"总共扫描了 {total_files_scanned} 个 Markdown 文件。")
     if total_files_changed > 0:
         if args.dry_run:
             print(f"✅ 发现 {total_files_changed} 个文件可以被修复。")
         else:
             print(f"✅ 成功修改了 {total_files_changed} 个文件。")
     else:
-        print("🎉 没有文件需要修复或所有指定文件都已符合规范。")
+        print("🎉 没有文件需要修复或所有扫描文件都已符合规范。")
 
 if __name__ == "__main__":
     main()
