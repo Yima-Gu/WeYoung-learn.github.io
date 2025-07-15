@@ -5,21 +5,21 @@ import argparse
 
 def fix_derivative_notation_in_file(file_path, dry_run=False):
     """
-    读取文件，将 f'_{x} 或 f'_{1} 这样的导数记法替换为 f_{x}' 或 f_{1}'，然后保存更改。
+    读取文件，将 f_{x}' 或 f_{1}' 这样的导数记法替换为 f_{x}' 或 f_{1}'，然后保存更改。
     """
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             original_content = f.read()
 
-        # 正则表达式，用于查找 f'_{x}, F''_{12}, g'''_{y} 等模式。
-        # 它能同时处理不带花括号的单个字符下标 (f'_x) 和
-        # 带花括号的多字符下标 (f'_{xy})。
+        # 正则表达式，用于查找 f_{x}', F_{12}'', g_{y}''' 等模式。
+        # 它能同时处理不带花括号的单个字符下标 (f_{x}') 和
+        # 带花括号的多字符下标 (f_{xy}')。
         # 捕获组:
-        # 1: ([fFgG])       - 函数名 (f, F, g, G)
+        # 1: ([fFgGhH])       - 函数名 (f, F, g, G)
         # 2: ('+)           - 一个或多个撇号 (即导数阶数)
         # 3: ([^}]+?)       - 花括号内的下标内容, 例如 'xy' (非贪婪匹配)
         # 4: ([a-zA-Z0-9])   - 单个字符的下标, 例如 'x'
-        pattern = re.compile(r"([fFgG])('+)_\s*(?:\{([^}]+?)\}|([a-zA-Z0-9]))")
+        pattern = re.compile(r"([fFgGhH])('+)_\s*(?:\{([^}]+?)\}|([a-zA-Z0-9]))")
 
         def replacer(match):
             """这个函数会根据匹配到的内容，将其重新组合成正确的顺序。"""
@@ -54,7 +54,7 @@ def fix_derivative_notation_in_file(file_path, dry_run=False):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="自动将 LaTeX 中的导数记法从 f'_{x} 格式修正为 f_{x}' 格式。",
+        description="自动将 LaTeX 中的导数记法从 f_{x}' 格式修正为 f_{x}' 格式。",
         formatter_class=argparse.RawTextHelpFormatter
     )
     parser.add_argument(
