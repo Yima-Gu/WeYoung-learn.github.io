@@ -2870,29 +2870,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw_11.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    hw_11
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../hw_12/" class="md-nav__link">
         
   
@@ -4191,18 +4168,19 @@
 <p>电磁势：</p>
 <p>在电偶极子系中，电偶极子产生的电磁势为：
 $$
-\begin{pmatrix} A_{x} \ A_{y} \ A_{z} \ \frac{\phi}{c} \end{pmatrix} 
-= 
-\begin{pmatrix} \gamma &amp; 0 &amp; 0 &amp; \gamma \beta \ 0 &amp; 1 &amp; 0 &amp; 0 \ 0 &amp; 0 &amp; 1 &amp; 0 \ \gamma \beta &amp; 0 &amp; 0 &amp; \gamma  \end{pmatrix} 
-\begin{pmatrix} A'<em y="y">{x} \ A'</em> \ A'<em 0="0">{z} \ \frac{\phi'}{c} \end{pmatrix} 
-= \begin{pmatrix} \gamma &amp; 0 &amp; 0 &amp; \gamma \beta \ 0 &amp; 1 &amp; 0 &amp; 0 \ 0 &amp; 0 &amp; 1 &amp; 0 \ \gamma \beta &amp; 0 &amp; 0 &amp; \gamma  \end{pmatrix}
-\begin{pmatrix} 0 \ 0 \ 0 \ \frac{1}{4 \pi \epsilon</em> 
+\begin{aligned}
+\begin{pmatrix} A_{x} \\ A_{y} \\ A_{z} \\ \frac{\phi}{c} \end{pmatrix} 
+= \begin{pmatrix} \gamma &amp; 0 &amp; 0 &amp; \gamma \beta \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ \gamma \beta &amp; 0 &amp; 0 &amp; \gamma  \end{pmatrix} 
+\begin{pmatrix} A_{x}' \\ A_{y}' \\ A_{z}' \\ \frac{\phi'}{c} \end{pmatrix} 
+= \begin{pmatrix} \gamma &amp; 0 &amp; 0 &amp; \gamma \beta \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ \gamma \beta &amp; 0 &amp; 0 &amp; \gamma  \end{pmatrix}
+\begin{pmatrix} 0 \\ 0 \\ 0 \\ \frac{1}{4 \pi \epsilon_{0} c} \frac{\vec{r'} \cdot \vec{p_{0}}}{r'^{3}} \end{pmatrix} 
 = \begin{pmatrix} 
-\frac{\gamma \beta}{4 \pi \epsilon_{0} c} \frac{\vec{r'} \cdot \vec{p_{0}}}{r'^{3}} \
-0 \
-0 \
+\frac{\gamma \beta}{4 \pi \epsilon_{0} c} \frac{\vec{r'} \cdot \vec{p_{0}}}{r'^{3}} \\
+0 \\
+0 \\
 \frac{\gamma}{4 \pi \epsilon_{0} c} \frac{\vec{r'} \cdot \vec{p_{0}}}{r'^{3}} \end{pmatrix}
-$$} c} \frac{\vec{r'} \cdot \vec{p_{0}}}{r'^{3}} \end{pmatrix</p>
+\end{aligned}
+$$</p>
 <p>所以<span class="arithmatex">\(\phi = \frac{\gamma}{4 \pi \epsilon_{0}} \frac{\vec{r'} \cdot \vec{p_{0}}}{r'^{3}}\)</span>， <span class="arithmatex">\(\vec{A} = \begin{pmatrix} \frac{\gamma \beta}{4 \pi \epsilon_{0} c} \frac{\vec{r'} \cdot \vec{p_{0}}}{r'^{3}}, 0, 0 \end{pmatrix}^{\top}\)</span></p>
 <p>其中<span class="arithmatex">\(\vec{r'} = \begin{pmatrix} \gamma (x - \beta c t), y, z \end{pmatrix}^{\top}\)</span></p>
 <p>在电偶极子系中，电偶极子产生的电场为：
@@ -4211,8 +4189,8 @@ $$
 $$
 换至地面系中，得到：
 $$
-E_{x} = E'<em 0="0">{x} = \frac{1}{4 \pi \epsilon</em>
-$$}} \frac{3 (\vec{p_{0}} \cdot \vec{r'}) x' - r'^{2} (\vec{p_{0}} \cdot \hat{x'})}{r'^{5}</p>
+E_{x} = E_{x}' = \frac{1}{4 \pi \epsilon_{0}} \frac{3 (\vec{p_{0}} \cdot \vec{r'}) x' - r'^{2} (\vec{p_{0}} \cdot \hat{x'})}{r'^{5}}
+$$</p>
 <div class="arithmatex">\[
 E_{y} = \gamma (E'_{y} + \beta c B'_{z}) = \gamma E'_{y} = \frac{\gamma}{4 \pi \epsilon_{0}} \frac{3(\vec{p_{0}} \cdot \vec{r'}) y' - r'^{2} (\vec{p_{0}} \cdot \hat{y'})}{r'^{5}}
 \]</div>
@@ -4229,22 +4207,22 @@ B_{y} = \gamma (B_{y'} - \beta \frac{E'_{z}}{c}) = - \frac{\gamma}{\beta c} E'_{
 B_{z} = \gamma (B_{z'} + \beta \frac{E'_{y}}{c}) = \frac{\gamma}{\beta c} E'_{y} = \frac{\gamma}{4 \pi \epsilon_{0} \beta c} \frac{3(\vec{p_{0}} \cdot \vec{r'}) y' - r'^{2} (\vec{p_{0}} \cdot \hat{y'})}{r'^{5}}
 \]</div>
 <p>其中<span class="arithmatex">\(\vec{r'} = \begin{pmatrix} \gamma (x - \beta c t), y, z \end{pmatrix}^{\top}\)</span></p>
-<p>6.15 有一沿 <span class="arithmatex">\(z\)</span> 轴方向螺旋进动的静磁场 <span class="arithmatex">\(\vec{B} = B_0 (\cos k_m z \hat{e}\_x + \sin k_m z \hat{e}\_y)\)</span>，其中 <span class="arithmatex">\(k_m = 2\pi / \lambda_m\)</span>，<span class="arithmatex">\(\lambda_m\)</span> 为磁场周期长度。现有一沿 <span class="arithmatex">\(z\)</span> 轴以速度 <span class="arithmatex">\(v = \beta c\)</span> 运动的惯性系，求在该惯性系中观察到的电磁场。证明当 <span class="arithmatex">\(\beta \simeq 1\)</span> 时该电磁场类似于一列频率为 <span class="arithmatex">\(\gamma \cdot \beta c k_m\)</span> 的圆偏振电磁波。</p>
+<p>6.15 有一沿 <span class="arithmatex">\(z\)</span> 轴方向螺旋进动的静磁场 <span class="arithmatex">\(\vec{B} = B_0 (\cos k_m z \hat{e}_x + \sin k_m z \hat{e}_y)\)</span>，其中 <span class="arithmatex">\(k_m = 2\pi / \lambda_m\)</span>，<span class="arithmatex">\(\lambda_m\)</span> 为磁场周期长度。现有一沿 <span class="arithmatex">\(z\)</span> 轴以速度 <span class="arithmatex">\(v = \beta c\)</span> 运动的惯性系，求在该惯性系中观察到的电磁场。证明当 <span class="arithmatex">\(\beta \simeq 1\)</span> 时该电磁场类似于一列频率为 <span class="arithmatex">\(\gamma \cdot \beta c k_m\)</span> 的圆偏振电磁波。</p>
 <p>在该系中：
 $$
-E'<em x="x">{x} = \gamma (E</em> z
-$$} - \beta c B_{y}) = - \gamma \beta c B_{0} \sin k_{m</p>
+E_{x}' = \gamma (E_{x} - \beta c B_{y}) = - \gamma \beta c B_{0} \sin k_{m} z
+$$</p>
 <div class="arithmatex">\[
-E'_{y} = \gamma (E_{y} + \beta c B_{x}) = \gamma \beta c B_{0} \cos k_{m} z
+E_{y}' = \gamma (E_{y} + \beta c B_{x}) = \gamma \beta c B_{0} \cos k_{m} z
 \]</div>
 <div class="arithmatex">\[
-E'_{z} = E_{z} = 0
+E_{z}' = E_{z} = 0
 \]</div>
 <div class="arithmatex">\[
-B'_{x} = \gamma (B_{x} + \beta c E_{z}) = \gamma B_{x} = \gamma B_{0} \cos k_{m} z
+B_{x}' = \gamma (B_{x} + \beta c E_{z}) = \gamma B_{x} = \gamma B_{0} \cos k_{m} z
 \]</div>
 <div class="arithmatex">\[
-B'_{y} = \gamma (B_{y} - \beta c E_{x}) = \gamma B_{y} = \gamma B_{0} \sin k_{m} z
+B_{y}' = \gamma (B_{y} - \beta c E_{x}) = \gamma B_{y} = \gamma B_{0} \sin k_{m} z
 \]</div>
 <div class="arithmatex">\[
 B'_{z} = B_{z} = 0
@@ -4267,16 +4245,18 @@ $$
 &amp;\begin{pmatrix} \gamma_{v} f_{x} \\
 \gamma_{v} f_{y} \\
 \gamma_{v} f_{z} \\
-\gamma_{v} \frac{\vec{f} \cdot \vec{v}}{c} \end{pmatrix} = \begin{pmatrix} \gamma &amp; 0 &amp; 0 &amp; \gamma \beta \\
+\gamma_{v} \frac{\vec{f} \cdot \vec{v}}{c} \end{pmatrix} = 
+\begin{pmatrix} \gamma &amp; 0 &amp; 0 &amp; \gamma \beta \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
-\gamma \beta &amp; 0 &amp; 0 &amp; \gamma \end{pmatrix} \begin{pmatrix} \gamma_{v'} f'<em v_="v'">{x} \\
-\gamma</em> f'<em v_="v'">{y} \\
-\gamma</em> f'<em v_="v'">{z} \\
-\gamma</em>
+\gamma \beta &amp; 0 &amp; 0 &amp; \gamma \end{pmatrix} 
+\begin{pmatrix} \gamma_{v'} f_{x}' \\
+\gamma_{v'} f_{y}' \\
+\gamma_{v'} f_{z}' \\
+\gamma_{v'} \frac{\vec{f'} \cdot \vec{v'}}{c}  \end{pmatrix}
 \end{aligned}
-$$
-在带电线静止系中，4-力矢量为} \frac{\vec{f'} \cdot \vec{v'}}{c}  \end{pmatrix<span class="arithmatex">\(\begin{pmatrix} \frac{\lambda q}{2 \pi \epsilon_{0} d} \hat{r}, 0 \end{pmatrix}\)</span></p>
+$$</p>
+<p>在带电线静止系中，4-力矢量为<span class="arithmatex">\(\begin{pmatrix} \frac{\lambda q}{2 \pi \epsilon_{0} d} \hat{r}, 0 \end{pmatrix}\)</span></p>
 <p>所以<span class="arithmatex">\(\gamma_{v} \vec{f} = \frac{\lambda q}{2 \pi \epsilon_{0} d} \hat{r}\)</span></p>
 <p><span class="arithmatex">\(\mathbf{F} = \frac{\lambda q}{2 \pi \epsilon_{0} d \gamma} \hat{r}\)</span></p>
 <p>(b) 直接计算线电荷和线电流作用在运动电荷上的电磁力。</p>
@@ -4484,6 +4464,8 @@ $$</p>
     
     
       <script src="../../../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../../../../../custom_js/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

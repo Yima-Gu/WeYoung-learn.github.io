@@ -2920,29 +2920,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw_11.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    hw_11
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../hw_12/" class="md-nav__link">
         
   
@@ -4262,69 +4239,69 @@
 <h3 id="1">1. 电磁场的矢势和标势</h3>
 <p>作业：书5.1, 5.4</p>
 <p>5.1 若把麦克斯韦方程组的所有矢量都分解为无旋的（纵场）和无散的（横场）两部分，写出 <span class="arithmatex">\(E\)</span> 和 <span class="arithmatex">\(B\)</span> 的这两部分在真空中所满足的方程式，并证明电场的无旋部分对应于库仑场。</p>
-<p>分解：（<span class="arithmatex">\(L\)</span> 代表纵向，<span class="arithmatex">\(T\)</span> 代表横向）
-$$
+<p>分解：（<span class="arithmatex">\(L\)</span> 代表纵向，<span class="arithmatex">\(T\)</span> 代表横向）</p>
+<div class="arithmatex">\[
 \begin{aligned}
-\mathbf{E} &amp;= \mathbf{E}<em L="L">{T} + \mathbf{E}</em> \\
-\mathbf{B} &amp;= \mathbf{B}<em L="L">{T} + \mathbf{B}</em>
+\mathbf{E} &amp;= \mathbf{E}_{T} + \mathbf{E}_{L} \\\\
+\mathbf{B} &amp;= \mathbf{B}_{T} + \mathbf{B}_{L}
 \end{aligned}
-$$
-所以麦克斯韦方程组化为
-$$
+\]</div>
+<p>所以麦克斯韦方程组化为</p>
+<div class="arithmatex">\[
 \begin{aligned}
-\nabla \cdot \mathbf{E} &amp;= \nabla \cdot (\mathbf{E}<em L="L">{T} + \mathbf{E}</em>}) = \nabla \cdot \mathbf{E<em 0="0">{L} = \frac{\rho}{\epsilon</em> \\
-\nabla \cdot \mathbf{B} &amp;= \nabla \cdot (\mathbf{B}}<em L="L">{T} + \mathbf{B}</em>}) = \nabla \cdot \mathbf{B<em L="L">{L} = 0 \\
-\nabla \cdot \mathbf{B}</em>} &amp;= \nabla \times \mathbf{B<em L="L">{L} = 0 \\
-\text{可以取适当横场使得} \, \mathbf{B}</em> &amp;= 0 \\
-\nabla \times \mathbf{E} &amp;= \nabla \times (\mathbf{E}<em L="L">{T} + \mathbf{E}</em>}) = \nabla \times \mathbf{E<em T="T">{T} = - \frac{\partial}{\partial t} \mathbf{B}</em> \\
-\nabla \times \mathbf{B} &amp;= \nabla \times \mathbf{B}<em 0="0">{T} = \mu</em>}  \mathbf{J} + \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} \mathbf{E} = \mu_{0} (\mathbf{J<em L="L">{T} + \mathbf{J}</em>}) + \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} (\mathbf{E<em L="L">{T} + \mathbf{E}</em>})  = \mu_{0} \mathbf{J<em 0="0">{T} + \mu</em>} \epsilon_{0} \frac{\partial}{\partial t} \mathbf{E<em 0="0">{T} \\
-\mu</em>} \mathbf{J<em 0="0">{L} + \mu</em> &amp;= 0
+\nabla \cdot \mathbf{E} &amp;= \nabla \cdot (\mathbf{E}_{T} + \mathbf{E}_{L}) = \nabla \cdot \mathbf{E}_{L} = \frac{\rho}{\epsilon_{0}} \\\\
+\nabla \cdot \mathbf{B} &amp;= \nabla \cdot (\mathbf{B}_{T} + \mathbf{B}_{L}) = \nabla \cdot \mathbf{B}_{L} = 0 \\\\
+\nabla \cdot \mathbf{B}_{L} &amp;= \nabla \times \mathbf{B}_{L} = 0 \\\\
+\text{可以取适当横场使得} \, \mathbf{B}_{L} &amp;= 0 \\\\
+\nabla \times \mathbf{E} &amp;= \nabla \times (\mathbf{E}_{T} + \mathbf{E}_{L}) = \nabla \times \mathbf{E}_{T} = - \frac{\partial}{\partial t} \mathbf{B}_{T} \\\\
+\nabla \times \mathbf{B} &amp;= \nabla \times \mathbf{B}_{T} = \mu_{0}  \mathbf{J} + \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} \mathbf{E} = \mu_{0} (\mathbf{J}_{T} + \mathbf{J}_{L}) + \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} (\mathbf{E}_{T} + \mathbf{E}_{L})  = \mu_{0} \mathbf{J}_{T} + \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} \mathbf{E}_{T} \\\\
+\mu_{0} \mathbf{J}_{L} + \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} \mathbf{E}_{L} &amp;= 0
 \end{aligned}
-$$
-其中电场的无旋部分 } \epsilon_{0} \frac{\partial}{\partial t} \mathbf{E}_{L<span class="arithmatex">\(\mathbf{E}_{L}\)</span> 满足 <span class="arithmatex">\(\nabla \cdot \mathbf{E}_{L} = \frac{\rho}{\epsilon_{0}}\)</span> ，即对应库仑场</p>
-<p>5.4 设真空中矢势 <span class="arithmatex">\(\mathbf{A}(\mathbf{x},t)\)</span> 可用复数傅里叶展开为
-$$
+\]</div>
+<p>其中电场的无旋部分 <span class="arithmatex">\(\mathbf{E}_{L}\)</span> 满足 <span class="arithmatex">\(\nabla \cdot \mathbf{E}_{L} = \frac{\rho}{\epsilon_{0}}\)</span> ，即对应库仑场</p>
+<p>5.4 设真空中矢势 <span class="arithmatex">\(\mathbf{A}(\mathbf{x},t)\)</span> 可用复数傅里叶展开为</p>
+<div class="arithmatex">\[
 \mathbf{A}(\mathbf{x},t) = \sum_k \left[ \mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]
-$$</p>
+\]</div>
 <p>其中 <span class="arithmatex">\(\mathbf{a}_k^*\)</span> 是 <span class="arithmatex">\(\mathbf{a}_k\)</span> 的复共轭。</p>
 <p>(1) 证明 <span class="arithmatex">\(\mathbf{a}_k\)</span> 满足谐振子方程</p>
 <div class="arithmatex">\[
 \frac{d^2 \mathbf{a}_k(t)}{dt^2} + k^2 c^2 \mathbf{a}_k(t) = 0
 \]</div>
-<p>证明：真空中没有自由电荷和电流，所以
-$$
+<p>证明：真空中没有自由电荷和电流，所以</p>
+<div class="arithmatex">\[
 \nabla \times (\nabla \times \mathbf{B}) = \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} (\nabla \times \mathbf{E}) = - \mu_{0} \epsilon_{0} \frac{\partial^{2}}{\partial t^{2}} \mathbf{B}
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 \nabla \times (\nabla \times (\nabla \times \mathbf{A})) = - \mu_{0} \epsilon_{0} \frac{\partial^{2}}{\partial t^{2}} \nabla \times \mathbf{A}
 \]</div>
 <div class="arithmatex">\[
 \nabla \times \left( \nabla \times (\nabla \times \mathbf{A}) + \mu_{0} \epsilon_{0} \frac{\partial^{2}}{\partial t^{2}} \mathbf{A} \right) = 0
 \]</div>
-<p>所以可以选取适当规范使得
-$$
+<p>所以可以选取适当规范使得</p>
+<div class="arithmatex">\[
 \nabla \times (\nabla \times \mathbf{A}) + \mu_{0} \epsilon_{0} \frac{\partial^{2}}{\partial t^{2}} \mathbf{A} = 0
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 \nabla \times (\nabla \times \sum_k \left[ \mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]) + \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \sum_k \left[ \mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right] = 0
 \]</div>
-<p>所以在库伦规范下
-$$
+<p>所以在库伦规范下</p>
+<div class="arithmatex">\[
 \nabla^{2} \mathbf{A} = \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \mathbf{A}
-$$
-所以
-$$
+\]</div>
+<p>所以</p>
+<div class="arithmatex">\[
 - \mathbf{k}^{2} \mathbf{A} = \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \mathbf{A}
-$$
-即对应系数
-$$
+\]</div>
+<p>即对应系数</p>
+<div class="arithmatex">\[
 \frac{d^2 \mathbf{a}_k(t)}{dt^2} + k^2 c^2 \mathbf{a}_k(t) = 0
-$$
-(2) 当选取规范 <span class="arithmatex">\(\nabla \cdot \mathbf{A} = 0, \varphi = 0\)</span> 时，证明 <span class="arithmatex">\(\mathbf{k} \cdot \mathbf{a}_k = 0\)</span></p>
-<p>证明：
-$$
+\]</div>
+<p>(2) 当选取规范 <span class="arithmatex">\(\nabla \cdot \mathbf{A} = 0, \varphi = 0\)</span> 时，证明 <span class="arithmatex">\(\mathbf{k} \cdot \mathbf{a}_k = 0\)</span></p>
+<p>证明：</p>
+<div class="arithmatex">\[
 \nabla \cdot \mathbf{A} = \nabla \cdot  \sum_k \left[ \mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right] = 0
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 \therefore \,\, \nabla \cdot (\mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}}) = 0
 \]</div>
@@ -4332,10 +4309,10 @@ $$</p>
 \nabla \cdot (\mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}}) = (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \cdot \mathbf{a}_{k} + (\nabla e^{- i \mathbf{k} \cdot \mathbf{x}}) \cdot \mathbf{a}_{k}^{*} = i e^{i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \cdot \mathbf{a}_{k} - i e^{- i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \cdot \mathbf{a}_{k}^{*} = 0
 \]</div>
 <p>对于任意 <span class="arithmatex">\(\mathbf{x}\)</span> 成立，所以<span class="arithmatex">\(\mathbf{k} \cdot \mathbf{a}_k = 0\)</span></p>
-<p>(3) 把 <span class="arithmatex">\(\mathbf{E}\)</span> 和 <span class="arithmatex">\(\mathbf{B}\)</span> 用 <span class="arithmatex">\(\mathbf{a}_k\)</span> 和 <span class="arithmatex">\(\mathbf{a}_k^*\)</span> 表示出来
-$$
+<p>(3) 把 <span class="arithmatex">\(\mathbf{E}\)</span> 和 <span class="arithmatex">\(\mathbf{B}\)</span> 用 <span class="arithmatex">\(\mathbf{a}_k\)</span> 和 <span class="arithmatex">\(\mathbf{a}_k^*\)</span> 表示出来</p>
+<div class="arithmatex">\[
 \mathbf{E} = - \frac{\partial}{\partial t} \mathbf{A} = - \sum_k \left[ \frac{d}{d t} \mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \frac{d}{d t} \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 \begin{aligned}
 \mathbf{B} &amp;= \nabla \times \mathbf{A} = \sum_k \left[ (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_k(t)  + (\nabla e^{-i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_k^*(t) \right] \\\\
@@ -4347,19 +4324,19 @@ $$</p>
 (a) 书5.5 </p>
 <p>5.5 设 <span class="arithmatex">\(\mathbf{A}\)</span> 和 <span class="arithmatex">\(\phi\)</span> 是满足洛伦兹规范的矢势和标势</p>
 <p>(1) 引入一矢量函数 <span class="arithmatex">\(\mathbf{Z} (\vec{x}, t)\)</span>（赫兹矢量），若令 <span class="arithmatex">\(\phi = -\nabla \cdot \mathbf{Z}\)</span>，证明 <span class="arithmatex">\(\mathbf{A} = \frac{1}{c^2} \frac{\partial \mathbf{Z}}{\partial t}\)</span></p>
-<p>由于 <span class="arithmatex">\(\nabla \cdot \mathbf{A} + \frac{1}{c^{2}} \frac{\partial}{\partial t} \phi = 0\)</span>
-$$
+<p>由于 <span class="arithmatex">\(\nabla \cdot \mathbf{A} + \frac{1}{c^{2}} \frac{\partial}{\partial t} \phi = 0\)</span></p>
+<div class="arithmatex">\[
 \nabla \cdot \mathbf{A} =  \frac{1}{c^{2}} \frac{\partial}{\partial t} \nabla \cdot \mathbf{Z}
-$$
-所以可以选取合适的 <span class="arithmatex">\(\mathbf{Z}\)</span> 使得
-$$
+\]</div>
+<p>所以可以选取合适的 <span class="arithmatex">\(\mathbf{Z}\)</span> 使得</p>
+<div class="arithmatex">\[
 \mathbf{A} = \frac{1}{c^2} \frac{\partial \mathbf{Z}}{\partial t}
-$$
-(2) 若令 <span class="arithmatex">\(\rho = -\nabla \cdot \mathbf{P}\)</span> 证明 <span class="arithmatex">\(\mathbf{Z}\)</span> 满足方程 <span class="arithmatex">\(\nabla^2 \mathbf{Z} - \frac{1}{c^2} \frac{\partial^2 \mathbf{Z}}{\partial t^2} = -c^2 \mu_0 \mathbf{P}\)</span>，写出在真空中的推迟解</p>
-<p>证明：
-$$
+\]</div>
+<p>(2) 若令 <span class="arithmatex">\(\rho = -\nabla \cdot \mathbf{P}\)</span> 证明 <span class="arithmatex">\(\mathbf{Z}\)</span> 满足方程 <span class="arithmatex">\(\nabla^2 \mathbf{Z} - \frac{1}{c^2} \frac{\partial^2 \mathbf{Z}}{\partial t^2} = -c^2 \mu_0 \mathbf{P}\)</span>，写出在真空中的推迟解</p>
+<p>证明：</p>
+<div class="arithmatex">\[
 \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_{0}}
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 \nabla \cdot (- \nabla \phi - \frac{\partial}{\partial t} \mathbf{A}) = \frac{\rho}{\epsilon_{0}}
 \]</div>
@@ -4369,50 +4346,50 @@ $$</p>
 <div class="arithmatex">\[
 \nabla^{2} (\nabla \cdot \mathbf{Z}) - \frac{1}{c^{2}} \frac{\partial}{\partial t} (\nabla \cdot \mathbf{Z}) = - c^{2} \mu_{0} (\nabla \cdot \mathbf{P})
 \]</div>
-<p>所以可以选取合适的 <span class="arithmatex">\(\mathbf{Z}\)</span> 以及 <span class="arithmatex">\(\mathbf{P}\)</span> 使得
-$$
+<p>所以可以选取合适的 <span class="arithmatex">\(\mathbf{Z}\)</span> 以及 <span class="arithmatex">\(\mathbf{P}\)</span> 使得</p>
+<div class="arithmatex">\[
 \nabla^2 \mathbf{Z} - \frac{1}{c^2} \frac{\partial^2 \mathbf{Z}}{\partial t^2} = -c^2 \mu_0 \mathbf{P}
-$$
-在真空中，<span class="arithmatex">\(\mathbf{Z}\)</span> 存在推迟解
-$$
+\]</div>
+<p>在真空中，<span class="arithmatex">\(\mathbf{Z}\)</span> 存在推迟解</p>
+<div class="arithmatex">\[
 \mathbf{Z} (\mathbf{r} ,t) = \int \frac{c^{2} \mu_{0} \mathbf{P} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})}{4 \pi |\mathbf{r} - \mathbf{r'}|} d \tau'
-$$
-(3) 证明 <span class="arithmatex">\(\mathbf{E}\)</span> 和 <span class="arithmatex">\(\mathbf{B}\)</span> 可通过 <span class="arithmatex">\(\mathbf{Z}\)</span> 用下列公式表出：
-$$
+\]</div>
+<p>(3) 证明 <span class="arithmatex">\(\mathbf{E}\)</span> 和 <span class="arithmatex">\(\mathbf{B}\)</span> 可通过 <span class="arithmatex">\(\mathbf{Z}\)</span> 用下列公式表出：</p>
+<div class="arithmatex">\[
 \mathbf{E} = \nabla \times (\nabla \times \mathbf{Z}) - c^2 \mu_0 \mathbf{P}, \quad \mathbf{B} = \frac{1}{c^2} \frac{\partial}{\partial t} \nabla \times \mathbf{Z}
-$$
-证明：
-$$
+\]</div>
+<p>证明：</p>
+<div class="arithmatex">\[
 \mathbf{E} = - \nabla \phi - \frac{\partial}{\partial t} \mathbf{A} =  \nabla (\nabla \cdot \mathbf{Z}) - \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \mathbf{Z} = \nabla (\nabla \cdot \mathbf{Z}) - \nabla^{2} \mathbf{Z} - c^{2} \mu_{0} \mathbf{P} = \nabla \times (\nabla \times \mathbf{Z}) - c^2 \mu_0 \mathbf{P}
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 \mathbf{B} = \nabla \times \mathbf{A} = \nabla \times \frac{1}{c^2} \frac{\partial \mathbf{Z}}{\partial t} = \frac{1}{c^2} \frac{\partial}{\partial t} \nabla \times \mathbf{Z}
 \]</div>
 <p>(b) 试证，库伦规范的解满足<span class="arithmatex">\(<span class="arithmatex">\(\nabla \cdot \mathbf{A} = 0\)</span>\)</span></p>
-<p>证明：库伦规范下的解为
-$$
+<p>证明：库伦规范下的解为</p>
+<div class="arithmatex">\[
 \phi (\mathbf{r}, t) = \int \frac{\rho (\mathbf{r}, t)}{4 \pi \epsilon_{0} |\mathbf{r} - \mathbf{r'}|} d \tau' 
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 \mathbf{A} (\mathbf{r}, t) = \int \frac{\mu_{0} (\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}))}{4 \pi |\mathbf{r} - \mathbf{r'}|} d \tau'
 \]</div>
-<p>所以矢势的散度为：（以下用 <span class="arithmatex">\(\nabla'_{r'}\)</span> 表示仅仅对于空间部分的散度，即不考虑散度中推迟项带来的影响）
-$$
+<p>所以矢势的散度为：（以下用 <span class="arithmatex">\(\nabla'_{r'}\)</span> 表示仅仅对于空间部分的散度，即不考虑散度中推迟项带来的影响）</p>
+<div class="arithmatex">\[
 \begin{aligned}
-\nabla \cdot \mathbf{A} &amp;=  \nabla \cdot \int \frac{\mu_{0} (\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'<em 0="0">{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}))}{4 \pi |\mathbf{r} - \mathbf{r'}|} d \tau' \\
-&amp;= \frac{\mu</em> \nabla'}}{4 \pi} \int \left( - \nabla' \frac{1}{|\mathbf{r} - \mathbf{r'}|}\right) \cdot \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t<em 0="0">{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) + \\
-\frac{1}{|\mathbf{r} - \mathbf{r'}|} \nabla \cdot \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon</em> \nabla'} \frac{\partial}{\partial t<em 0="0">{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) d \tau' \\
-&amp;= \frac{\mu</em> \nabla'}}{4 \pi} \int - \nabla' \frac{\left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t<em 0="0">{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right)}{|\mathbf{r} - \mathbf{r'}|} + \\
-\frac{1}{|\mathbf{r} - \mathbf{r'}|} \nabla' \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon</em> \nabla'} \frac{\partial}{\partial t<em 0="0">{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) + \\
-\frac{1}{|\mathbf{r} - \mathbf{r'}|} \frac{\partial}{\partial t} \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon</em> \nabla'} \frac{\partial}{\partial t<em 0="0">{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) \cdot \nabla (t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) \, d \tau' \\
-&amp;= \frac{\mu</em> \nabla'}}{4 \pi} \oiint_{S'} - d \mathbf{S'} \cdot \frac{\left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t<em r_="r'">{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right)}{|\mathbf{r} - \mathbf{r'}|}  + \\
-\int \frac{1}{|\mathbf{r} - \mathbf{r'}|} \nabla'</em> \nabla'} \cdot \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t<em 0="0">{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) + \\
-\frac{1}{|\mathbf{r} - \mathbf{r'}|} \frac{\partial}{\partial t} \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon</em> \nabla'} \frac{\partial}{\partial t<em 0="0">{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) \cdot (\nabla (t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) + \nabla' (t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})) \, d \tau' \\
-&amp;= \frac{\mu</em> \left( \nabla'}}{4 \pi} \int \frac{1}{|\mathbf{r} - \mathbf{r'}|<em 0="0">{r'} \cdot \mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon</em> {\nabla'} \frac{\partial}{\partial t<em 0="0">{r'}}^{2} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) \, d \tau' \\
-&amp;= \frac{\mu</em>)) \, d \tau' = 0
+\nabla \cdot \mathbf{A} &amp;=  \nabla \cdot \int \frac{\mu_{0} (\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}))}{4 \pi |\mathbf{r} - \mathbf{r'}|} d \tau' \\\\
+&amp;= \frac{\mu_{0}}{4 \pi} \int \left( - \nabla' \frac{1}{|\mathbf{r} - \mathbf{r'}|}\right) \cdot \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) + \\\\
+&amp;\frac{1}{|\mathbf{r} - \mathbf{r'}|} \nabla \cdot \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) d \tau' \\\\
+&amp;= \frac{\mu_{0}}{4 \pi} \int - \nabla' \frac{\left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right)}{|\mathbf{r} - \mathbf{r'}|} + \\\\
+&amp;\frac{1}{|\mathbf{r} - \mathbf{r'}|} \nabla' \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) + \\\\
+&amp;\frac{1}{|\mathbf{r} - \mathbf{r'}|} \frac{\partial}{\partial t} \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) \cdot \nabla (t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) \, d \tau' \\\\
+&amp;= \frac{\mu_{0}}{4 \pi} \iint_{S'} - d \mathbf{S'} \cdot \frac{\left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right)}{|\mathbf{r} - \mathbf{r'}|}  + \\\\
+&amp;\int \frac{1}{|\mathbf{r} - \mathbf{r'}|} \nabla'_{r'} \cdot \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) + \\\\
+&amp; \frac{1}{|\mathbf{r} - \mathbf{r'}|} \frac{\partial}{\partial t} \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) \cdot (\nabla (t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) + \nabla' (t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})) \, d \tau' \\\\
+&amp;= \frac{\mu_{0}}{4 \pi} \int \frac{1}{|\mathbf{r} - \mathbf{r'}|} \left( \nabla'_{r'} \cdot \mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} {\nabla'_{r'}}^{2} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) \, d \tau' \\\\
+&amp;= \frac{\mu_{0}}{4 \pi} \int \frac{1}{|\mathbf{r} - \mathbf{r'}|} (\nabla'_{r'} \cdot \mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) + \frac{\partial}{\partial t} \rho (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})) \, d \tau' = 0
 \end{aligned}
-$$
-其中最后一步是流守恒的直接结果。}}{4 \pi} \int \frac{1}{|\mathbf{r} - \mathbf{r'}|} (\nabla'_{r'} \cdot \mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) + \frac{\partial}{\partial t} \rho (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c</p>
+\]</div>
+<p>其中最后一步是流守恒的直接结果。</p>
 
 
 
@@ -4523,6 +4500,8 @@ $$
     
     
       <script src="../../../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../../../../../custom_js/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

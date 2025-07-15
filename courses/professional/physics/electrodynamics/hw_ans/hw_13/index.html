@@ -2860,29 +2860,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw_11.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    hw_11
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../hw_12/" class="md-nav__link">
         
   
@@ -4263,279 +4240,279 @@
 <p>书2.2, 2.4, 2.18</p>
 <p>2.2 在均匀外电场中置入半径为 <span class="arithmatex">\(R_0\)</span> 的导体球，试用分离变数法求下列两种情况的电势：</p>
 <p>(1) 导体球上接有电池，使球与地保持电势差 <span class="arithmatex">\(\Phi_0\)</span>；</p>
-<p>假设球心在垂直电场方向上到无穷远处的电势为 <span class="arithmatex">\(\phi_{0}\)</span> ，均匀外电场大小为 <span class="arithmatex">\(E_{0}\)</span> ，位矢与外电场夹角为 <span class="arithmatex">\(\theta\)</span>
-$$
+<p>假设球心在垂直电场方向上到无穷远处的电势为 <span class="arithmatex">\(\phi_{0}\)</span> ，均匀外电场大小为 <span class="arithmatex">\(E_{0}\)</span> ，位矢与外电场夹角为 <span class="arithmatex">\(\theta\)</span></p>
+<div class="arithmatex">\[
 \phi (r, \theta) = \sum_{n} (A_{n} r^{n} + B_{n} \frac{1}{r^{n + 1}}) P_{n} (\cos \theta)
-$$
-保留 <span class="arithmatex">\(n = 0\)</span> 以及 <span class="arithmatex">\(n = 1\)</span> 项
-$$
+\]</div>
+<p>保留 <span class="arithmatex">\(n = 0\)</span> 以及 <span class="arithmatex">\(n = 1\)</span> 项</p>
+<div class="arithmatex">\[
 \phi (r, \theta) = A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta
-$$
-带入 <span class="arithmatex">\(\theta = \frac{\pi}{2}, r \to \infty, \phi = \phi_{0}\)</span>，所以 <span class="arithmatex">\(A_{0} = \phi _{0}\)</span></p>
-<p>当 <span class="arithmatex">\(r = R_{0}\)</span> 时，<span class="arithmatex">\(\phi = \Phi_{0}\)</span> ，所以 <span class="arithmatex">\(A_{1} R_{0} + \frac{B_{1}}{R_{0}^{2}} = 0\)</span>
-$$
+\]</div>
+<p>带入 <span class="arithmatex">\(\theta = \frac{\pi}{2}, r \to \infty, \phi = \phi_{0}\)</span>，所以 <span class="arithmatex">\(A_{0} = \phi _{0}\)</span></p>
+<p>当 <span class="arithmatex">\(r = R_{0}\)</span> 时，<span class="arithmatex">\(\phi = \Phi_{0}\)</span> ，所以 <span class="arithmatex">\(A_{1} R_{0} + \frac{B_{1}}{R_{0}^{2}} = 0\)</span></p>
+<div class="arithmatex">\[
 A_{0} + \frac{B_{0}}{R_{0}} = \Phi_{0}
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 B_{0} = R_{0} (\Phi_{0} - \phi_{0})
 \]</div>
-<p>再利用电场定出剩余系数
-$$
+<p>再利用电场定出剩余系数</p>
+<div class="arithmatex">\[
 \begin{aligned}
-\vec{E} &amp;= - \nabla \phi = - \hat{r} \frac{\partial}{\partial r} (A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta) \\
-&amp;= \frac{B_{0}}{r^{2}} \hat{r} - A_{1} \cos \theta \hat{r} + \frac{2 B_{1}}{r^{3}} \cos \theta \hat{r} + \frac{1}{r} (A_{1} r + \frac{B_{1}}{r^{2}}) \sin \theta \hat{\theta} \\
+\vec{E} &amp;= - \nabla \phi = - \hat{r} \frac{\partial}{\partial r} (A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta) \\\\
+&amp;= \frac{B_{0}}{r^{2}} \hat{r} - A_{1} \cos \theta \hat{r} + \frac{2 B_{1}}{r^{3}} \cos \theta \hat{r} + \frac{1}{r} (A_{1} r + \frac{B_{1}}{r^{2}}) \sin \theta \hat{\theta} \\\\
 &amp;= \frac{R_{0} (\Phi_{0} - \phi_{0})}{r^{2}} \hat{r} - A_{1} \cos \theta \hat{r} + A_{1} \sin \theta \hat{\theta} + \frac{2 B_{1}}{r^{3}} \cos \theta \hat{r} + \frac{B_{1}}{r^{3}} \sin \theta \hat{\theta}
 \end{aligned}
-$$
-当 <span class="arithmatex">\(r \to \infty, \theta  = 0\)</span> 时，电场大小为 <span class="arithmatex">\(E_{0}\)</span> ，所以 
-$$
+\]</div>
+<p>当 <span class="arithmatex">\(r \to \infty, \theta  = 0\)</span> 时，电场大小为 <span class="arithmatex">\(E_{0}\)</span> ，所以 </p>
+<div class="arithmatex">\[
 A_{1} = - E_{0}
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 - E_{0} R_{0} + \frac{B_{1}}{R_{0}^{2}} = 0
 \]</div>
 <div class="arithmatex">\[
 B_{1} = E_{0} R_{0}^{3}
 \]</div>
-<p>所以电势分布为
-$$
+<p>所以电势分布为</p>
+<div class="arithmatex">\[
 \phi (r, \theta) = \phi_{0} + \frac{R_{0}(\Phi_{0} - \phi_{0})}{r} - E_{0} r \cos \theta + \frac{E_{0} R_{0}^{3}}{r^{2}} \cos \theta \qquad (r &gt; R_{0})
-$$
-(2) 导体球上带总电荷 <span class="arithmatex">\(Q\)</span>。</p>
+\]</div>
+<p>(2) 导体球上带总电荷 <span class="arithmatex">\(Q\)</span>。</p>
 <p>假设球心在垂直电场方向上到无穷远处的电势为 <span class="arithmatex">\(\phi_{0}\)</span> ，均匀外电场大小为 <span class="arithmatex">\(E_{0}\)</span> ，位矢与外电场夹角为 <span class="arithmatex">\(\theta\)</span></p>
 <p>同样保留球坐标下拉普拉斯方程解的前两项</p>
-<p>保留 <span class="arithmatex">\(n = 0\)</span> 以及 <span class="arithmatex">\(n = 1\)</span> 项
-$$
+<p>保留 <span class="arithmatex">\(n = 0\)</span> 以及 <span class="arithmatex">\(n = 1\)</span> 项</p>
+<div class="arithmatex">\[
 \phi (r, \theta) = A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta
-$$
-带入 <span class="arithmatex">\(\theta = \frac{\pi}{2}, r \to \infty, \phi = \phi_{0}\)</span>，所以 <span class="arithmatex">\(A_{0} = \phi _{0}\)</span></p>
+\]</div>
+<p>带入 <span class="arithmatex">\(\theta = \frac{\pi}{2}, r \to \infty, \phi = \phi_{0}\)</span>，所以 <span class="arithmatex">\(A_{0} = \phi _{0}\)</span></p>
 <p>当 <span class="arithmatex">\(r = R_{0}\)</span> 时，<span class="arithmatex">\(\phi\)</span> 为常数 ，所以 <span class="arithmatex">\(A_{1} R_{0} + \frac{B_{1}}{R_{0}^{2}} = 0\)</span></p>
-<p>再利用电场定出剩余系数
-$$
+<p>再利用电场定出剩余系数</p>
+<div class="arithmatex">\[
 \begin{aligned}
-\vec{E} &amp;= - \nabla \phi = - \hat{r} \frac{\partial}{\partial r} (A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta) \\
-&amp;= \frac{B_{0}}{r^{2}} \hat{r} - A_{1} \cos \theta \hat{r} + \frac{2 B_{1}}{r^{3}} \cos \theta \hat{r} + \frac{1}{r} (A_{1} r + \frac{B_{1}}{r^{2}}) \sin \theta \hat{\theta} \\
+\vec{E} &amp;= - \nabla \phi = - \hat{r} \frac{\partial}{\partial r} (A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta) \\\\
+&amp;= \frac{B_{0}}{r^{2}} \hat{r} - A_{1} \cos \theta \hat{r} + \frac{2 B_{1}}{r^{3}} \cos \theta \hat{r} + \frac{1}{r} (A_{1} r + \frac{B_{1}}{r^{2}}) \sin \theta \hat{\theta} \\\\
 &amp;= \frac{B_{0}}{r^{2}} \hat{r} - A_{1} \cos \theta \hat{r} + A_{1} \sin \theta \hat{\theta} + \frac{2 B_{1}}{r^{3}} \cos \theta \hat{r} + \frac{B_{1}}{r^{3}} \sin \theta \hat{\theta}
 \end{aligned}
-$$
-当 <span class="arithmatex">\(r \to \infty, \theta  = 0\)</span> 时，电场大小为 <span class="arithmatex">\(E_{0}\)</span> ，所以 
-$$
+\]</div>
+<p>当 <span class="arithmatex">\(r \to \infty, \theta  = 0\)</span> 时，电场大小为 <span class="arithmatex">\(E_{0}\)</span> ，所以 </p>
+<div class="arithmatex">\[
 A_{1} = - E_{0}
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 - E_{0} R_{0} + \frac{B_{1}}{R_{0}^{2}} = 0
 \]</div>
 <div class="arithmatex">\[
 B_{1} = E_{0} R_{0}^{3}
 \]</div>
-<p>因为导体球表面带电量为 <span class="arithmatex">\(Q\)</span> ，所以
-$$
+<p>因为导体球表面带电量为 <span class="arithmatex">\(Q\)</span> ，所以</p>
+<div class="arithmatex">\[
 Q = \epsilon_{0} \oint d \vec{S} \cdot \vec{E} = \epsilon_{0} \oint d S (\frac{B_{0}}{R_{0}^{2}}  - A_{1} \cos \theta) 
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 Q = \epsilon_{0} 4 \pi B_{0}
 \]</div>
 <div class="arithmatex">\[
 B_{0} = \frac{Q}{4 \pi \epsilon_{0}}
 \]</div>
-<p>所以电势分布为
-$$
+<p>所以电势分布为</p>
+<div class="arithmatex">\[
 \phi (r, \theta) = \phi_{0} + \frac{Q}{4 \pi \epsilon_{0} r} - E_{0} r \cos \theta + \frac{E_{0} R_{0}^{3}}{r^{2}} \cos \theta \qquad (r &gt; R_{0})
-$$</p>
+\]</div>
 <p>2.4 均匀介质球(电容率为 <span class="arithmatex">\(\varepsilon_1\)</span>)的中心置一自由电偶极子 <span class="arithmatex">\(\vec{p}_t\)</span>，球外充满了另一种介质(电容率为 <span class="arithmatex">\(\varepsilon_2\)</span>)，求空间各点的电势和极化电荷分布。</p>
-<p>提示：同上题，<span class="arithmatex">\(\phi = \frac{\vec{p}_t \cdot \vec{r}}{4\pi\epsilon_1 r^3} + \phi'\)</span>，而 <span class="arithmatex">\(\phi'\)</span> 满足拉普拉斯方程。
-$$
+<p>提示：同上题，<span class="arithmatex">\(\phi = \frac{\vec{p}_t \cdot \vec{r}}{4\pi\epsilon_1 r^3} + \phi'\)</span>，而 <span class="arithmatex">\(\phi'\)</span> 满足拉普拉斯方程。</p>
+<div class="arithmatex">\[
 \phi' (r, \theta) = \sum_{n} (A_{n} r^{n} + B_{n} \frac{1}{r^{n + 1}}) P_{n} (\cos \theta)
-$$
-保留前两项</p>
-<p>由于 <span class="arithmatex">\(\phi'\)</span> 在原点处不发散，所以在 <span class="arithmatex">\(r &lt; R_{0}\)</span> 区域
-$$
+\]</div>
+<p>保留前两项</p>
+<p>由于 <span class="arithmatex">\(\phi'\)</span> 在原点处不发散，所以在 <span class="arithmatex">\(r &lt; R_{0}\)</span> 区域</p>
+<div class="arithmatex">\[
 \phi' (r, \theta) = A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta
-$$
-$$
+\]</div>
+<div class="arithmatex">\[
 B_{0} = B_{1} = 0
-$$</p>
-<p>电场
-$$
+\]</div>
+<p>电场</p>
+<div class="arithmatex">\[
 \begin{aligned}
-\vec{E} &amp;= - \nabla (\phi' + \frac{\vec{p}<em 0="0">t \cdot \vec{r}}{4\pi\epsilon_1 r^3}) \\
-&amp;= - \hat{r} \frac{\partial}{\partial r} (A</em>) \\
+\vec{E} &amp;= - \nabla (\phi' + \frac{\vec{p}_t \cdot \vec{r}}{4\pi\epsilon_1 r^3}) \\\\
+&amp;= - \hat{r} \frac{\partial}{\partial r} (A_{0} + A_{1} r \cos \theta + \frac{p_{t} \cos \theta}{4 \pi \epsilon_{1} r^{2}}) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (A_{0} + A_{1} r + \cos \theta + \frac{p_{t} \cos \theta}{4 \pi \epsilon_{1} r^{2}}) \\\\
 &amp;= - A_{1} \cos \theta \hat{r} + A_{1} \sin \theta \hat{\theta} + \frac{p_{t}}{2 \pi \epsilon_{1} r^{3}} \cos \theta \hat{r} + \frac{p_{t}}{4 \pi \epsilon_{1} r^{3}} \sin \theta \hat{\theta}
 \end{aligned}
-$$} + A_{1} r \cos \theta + \frac{p_{t} \cos \theta}{4 \pi \epsilon_{1} r^{2}}) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (A_{0} + A_{1} r + \cos \theta + \frac{p_{t} \cos \theta}{4 \pi \epsilon_{1} r^{2}</p>
-<p>由于无穷远处电势为0，所以在 <span class="arithmatex">\(r &gt; R_{0}\)</span> 区域
-$$
+\]</div>
+<p>由于无穷远处电势为0，所以在 <span class="arithmatex">\(r &gt; R_{0}\)</span> 区域</p>
+<div class="arithmatex">\[
 \phi (r, \theta) = C_{0} + \frac{D_{0}}{r} + (C_{1} r + \frac{D_{1}}{r^{2}}) \cos \theta
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 C_{0} = C_{1} = 0
 \]</div>
-<p>再利用电场确定剩余系数
-$$
+<p>再利用电场确定剩余系数</p>
+<div class="arithmatex">\[
 \begin{aligned}
-\vec{E}  &amp;= - \nabla \phi = - \hat{r} \frac{\partial}{\partial r} (\frac{D_{0}}{r} + \frac{D_{1}}{r^{2}} \cos \theta) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (\frac{D_{0}}{r} + \frac{D_{1}}{r^{2}} \cos \theta) \\
+\vec{E}  &amp;= - \nabla \phi = - \hat{r} \frac{\partial}{\partial r} (\frac{D_{0}}{r} + \frac{D_{1}}{r^{2}} \cos \theta) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (\frac{D_{0}}{r} + \frac{D_{1}}{r^{2}} \cos \theta) \\\\
 &amp;= \frac{D_{0}}{r^{2}} \hat{r} + \frac{2 D_{1}}{r^{3}} \cos \theta \hat{r} + \frac{D_{1}}{r^{3}} \sin \theta \hat{\theta}
 \end{aligned}
-$$
-在 <span class="arithmatex">\(r = R_{0}\)</span> 处电势连续
-$$
+\]</div>
+<p>在 <span class="arithmatex">\(r = R_{0}\)</span> 处电势连续</p>
+<div class="arithmatex">\[
 \begin{aligned}
-A_{0} &amp;= \frac{D_{0}}{R_{0}} \\
+A_{0} &amp;= \frac{D_{0}}{R_{0}} \\\\
 A_{1} R_{0} + \frac{p_{t}}{4 \pi \epsilon_{1} R_{0}^{2}} &amp;= \frac{D_{1}}{R_{0}^{2}}
 \end{aligned}
-$$
-在<span class="arithmatex">\(r = R_{0}\)</span> 处电场强度切向连续
-$$
+\]</div>
+<p>在<span class="arithmatex">\(r = R_{0}\)</span> 处电场强度切向连续</p>
+<div class="arithmatex">\[
 A_{1} + \frac{p_{t}}{4 \pi \epsilon_{1} R_{0}^{3}} = \frac{D_{1}}{R_{0}^{3}}
-$$
-在<span class="arithmatex">\(r = R_{0}\)</span> 处电位移矢量法向连续
-$$
+\]</div>
+<p>在<span class="arithmatex">\(r = R_{0}\)</span> 处电位移矢量法向连续</p>
+<div class="arithmatex">\[
 \begin{aligned}
-\epsilon_{1} B_{0} &amp;= \epsilon_{2} D_{0} = 0 \\
+\epsilon_{1} B_{0} &amp;= \epsilon_{2} D_{0} = 0 \\\\
 \epsilon_{1} (\frac{p_{t}}{2 \pi \epsilon_{1} R_{0}^{3}} - A_{1}) &amp;= \epsilon_{2} \frac{2 D_{1}}{R_{0}^{3}}
 \end{aligned}
-$$
-可以解出
-$$
+\]</div>
+<p>可以解出</p>
+<div class="arithmatex">\[
 \begin{aligned}
-A_{0} &amp;= D_{0} = 0 \\
-A_{1} &amp;= \frac{(\epsilon_{1} - \epsilon_{2}) p_{t}}{2 \pi \epsilon_{1} (\epsilon_{1} + 2 \epsilon_{2}) R_{0}^{3}} \\
+A_{0} &amp;= D_{0} = 0 \\\\
+A_{1} &amp;= \frac{(\epsilon_{1} - \epsilon_{2}) p_{t}}{2 \pi \epsilon_{1} (\epsilon_{1} + 2 \epsilon_{2}) R_{0}^{3}} \\\\
 D_{1} &amp;= \frac{3 p_{t}}{4 \pi (\epsilon_{1} + 2 \epsilon_{2})}
 \end{aligned}
-$$
-所以电势分布为
-$$
+\]</div>
+<p>所以电势分布为</p>
+<div class="arithmatex">\[
 \begin{aligned}
-\phi = \begin{cases} \frac{3(\vec{p}<em 0="0">t \cdot \vec{r})}{4\pi(\epsilon_1 + 2\epsilon_2) r^{3}}&amp; (r &gt; R</em>) \\
-\frac{\vec{p}<em 0="0">t \cdot \vec{r}}{4\pi\epsilon_1 r^{3}} + \frac{2(\epsilon_1 - \epsilon_2)(\vec{p}_t \cdot \vec{r})}{4\pi \epsilon_1 (\epsilon_1 + 2\epsilon_2) R</em>
+\phi = \begin{cases} \frac{3(\vec{p}_t \cdot \vec{r})}{4\pi(\epsilon_1 + 2\epsilon_2) r^{3}}&amp; (r &gt; R_{0}) \\\\
+\frac{\vec{p}_t \cdot \vec{r}}{4\pi\epsilon_1 r^{3}} + \frac{2(\epsilon_1 - \epsilon_2)(\vec{p}_t \cdot \vec{r})}{4\pi \epsilon_1 (\epsilon_1 + 2\epsilon_2) R_{0}^{3}} &amp; (r &lt; R_0) \end{cases}
 \end{aligned}
-$$
-极化电荷分布}^{3}} &amp; (r &lt; R_0) \end{cases</p>
+\]</div>
+<p>极化电荷分布</p>
 <p>球心处有极化偶极子 <span class="arithmatex">\(\vec{p} = \left( \frac{\varepsilon_0}{\varepsilon_1} - 1 \right) \vec{p}_t\)</span></p>
 <p>球面上有极化面电荷 <span class="arithmatex">\(\sigma_p = \frac{3(\varepsilon_1 - \varepsilon_2)\varepsilon_0 \vec{p}_t}{2\pi\varepsilon_1 (\varepsilon_1 + 2\varepsilon_2)R_0^3} \cos \theta\)</span></p>
-<p>2.18 一半径为 <span class="arithmatex">\(R_0\)</span> 的球面，在球坐标 <span class="arithmatex">\(0&lt;\theta&lt;\frac{\pi}{2}\)</span> 的半球面上电势为 <span class="arithmatex">\(\phi_0\)</span>，在 <span class="arithmatex">\(\frac{\pi}{2}&lt;\theta&lt;\pi\)</span> 的半球面上电势为 <span class="arithmatex">\(- \phi_0\)</span>，求空间各点电势。
-$$
+<p>2.18 一半径为 <span class="arithmatex">\(R_0\)</span> 的球面，在球坐标 <span class="arithmatex">\(0&lt;\theta&lt;\frac{\pi}{2}\)</span> 的半球面上电势为 <span class="arithmatex">\(\phi_0\)</span>，在 <span class="arithmatex">\(\frac{\pi}{2}&lt;\theta&lt;\pi\)</span> 的半球面上电势为 <span class="arithmatex">\(- \phi_0\)</span>，求空间各点电势。</p>
+<div class="arithmatex">\[
 \phi (r, \theta) = \sum_{n} (A_{n} r^{n} + B_{n} \frac{1}{r^{n + 1}}) P_{n} (\cos \theta)
-$$
-分为 <span class="arithmatex">\(r &lt; R_{0}\)</span> 以及 <span class="arithmatex">\(r &gt; R_{0}\)</span>  两块空间求解</p>
+\]</div>
+<p>分为 <span class="arithmatex">\(r &lt; R_{0}\)</span> 以及 <span class="arithmatex">\(r &gt; R_{0}\)</span>  两块空间求解</p>
 <p>对于 <span class="arithmatex">\(r &lt; R_{0}\)</span> </p>
-<p>由于电势在球心处不发散，所以 <span class="arithmatex">\(B_{n} = 0\)</span>
-$$
+<p>由于电势在球心处不发散，所以 <span class="arithmatex">\(B_{n} = 0\)</span></p>
+<div class="arithmatex">\[
 \phi (r, \theta) = \sum_{n} A_{n} r^{n} P_{n} (\cos \theta)
-$$
-利用勒让德多项式的正交性
-$$
+\]</div>
+<p>利用勒让德多项式的正交性</p>
+<div class="arithmatex">\[
 \begin{aligned}
-&amp;\int_{0}^{\pi} \phi (R_{0}, \theta) P_{n} (\cos \theta) \sin \theta d \theta \\
-&amp;= \int_{-1}^{0} - \phi_{0} P_{n} (x) d x + \int_{0}^{1} \phi_{0} P_{n} (x) d x = (-1)^{n + 1} \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|<em 0="0">{0}^{1} + \phi</em> \right|} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1<em 0="0">{0}^{1} \\
-= \begin{cases} 0 &amp; (n \text{是偶数}) \\
-2 \phi</em>
-\end{aligned}
-$$
-所以
-$$
-\begin{aligned}
-\int_{-1}^{1} A_{n} R_{0}^{n} P_{n}^{2} (x) d x = \begin{cases} 0 &amp; (n \text{是偶数}) \\
+&amp;\int_{0}^{\pi} \phi (R_{0}, \theta) P_{n} (\cos \theta) \sin \theta d \theta \\\\
+&amp;= \int_{-1}^{0} - \phi_{0} P_{n} (x) d x + \int_{0}^{1} \phi_{0} P_{n} (x) d x = (-1)^{n + 1} \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1} + \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1} \\\\
+&amp;= \begin{cases} 0 &amp; (n \text{是偶数}) \\\\
 2 \phi_{0} \frac{P_{n - 1} (0) - P_{n + 1} (0)}{2 n + 1} &amp; (n \text{是奇数}) \end{cases}
 \end{aligned}
-$$
-即 } \frac{P_{n - 1} (0) - P_{n + 1} (0)}{2 n + 1} &amp; (n \text{是奇数}) \end{cases<span class="arithmatex">\(n\)</span> 是奇数时
-$$
+\]</div>
+<p>所以</p>
+<div class="arithmatex">\[
 \begin{aligned}
-A_{n} &amp;= \frac{\phi_{0}}{R_{0}^{n}} (P_{n - 1} (0) - P_{n + 1} (0)) \\
+\int_{-1}^{1} A_{n} R_{0}^{n} P_{n}^{2} (x) d x = \begin{cases} 0 &amp; (n \text{是偶数}) \\\\
+2 \phi_{0} \frac{P_{n - 1} (0) - P_{n + 1} (0)}{2 n + 1} &amp; (n \text{是奇数}) \end{cases}
+\end{aligned}
+\]</div>
+<p>即 <span class="arithmatex">\(n\)</span> 是奇数时</p>
+<div class="arithmatex">\[
+\begin{aligned}
+A_{n} &amp;= \frac{\phi_{0}}{R_{0}^{n}} (P_{n - 1} (0) - P_{n + 1} (0)) \\\\
 &amp;= (-1)^{\frac{n - 1}{2}} \frac{\phi_{0}}{R_{0}^{n}} \frac{(n - 2)!!}{(n + 1)!!} (2n + 1)
 \end{aligned}
-$$
-所以
-$$
+\]</div>
+<p>所以</p>
+<div class="arithmatex">\[
 \phi (r, \theta) = \sum_{n = 0}^{\infty} (-1)^{n} (4n + 3) \frac{(2n - 1)!!}{(2n + 2)!!} \phi_{0} \left( \frac{r}{R_{0}} \right)^{2n + 1} P_{2n + 1} (\cos \theta)
-$$
-对于 <span class="arithmatex">\(r &gt; R_{0}\)</span> </p>
-<p>由于电势在无穷远处不发散，所以 <span class="arithmatex">\(A_{n} = 0\)</span>
-$$
+\]</div>
+<p>对于 <span class="arithmatex">\(r &gt; R_{0}\)</span> </p>
+<p>由于电势在无穷远处不发散，所以 <span class="arithmatex">\(A_{n} = 0\)</span></p>
+<div class="arithmatex">\[
 \phi (r, \theta) = \sum_{n} \frac{B_{n}}{r^{n + 1}} P_{n} (\cos \theta)
-$$
-利用勒让德多项式的正交性
-$$
+\]</div>
+<p>利用勒让德多项式的正交性</p>
+<div class="arithmatex">\[
 \begin{aligned}
-&amp;\int_{0}^{\pi} \phi (R_{0}, \theta) P_{n} (\cos \theta) \sin \theta d \theta \\
-&amp;= \int_{-1}^{0} - \phi_{0} P_{n} (x) d x + \int_{0}^{1} \phi_{0} P_{n} (x) d x = (-1)^{n + 1} \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|<em 0="0">{0}^{1} + \phi</em> \right|} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1<em 0="0">{0}^{1} \\
-= \begin{cases} 0 &amp; (n \text{是偶数}) \\
-2 \phi</em>
-\end{aligned}
-$$
-所以
-$$
-\begin{aligned}
-\int_{-1}^{1} \frac{B_{n}}{R_{0}^{n + 1}} P_{n}^{2} (x) d x = \begin{cases} 0 &amp; (n \text{是偶数}) \\
+&amp;\int_{0}^{\pi} \phi (R_{0}, \theta) P_{n} (\cos \theta) \sin \theta d \theta \\\\
+&amp;= \int_{-1}^{0} - \phi_{0} P_{n} (x) d x + \int_{0}^{1} \phi_{0} P_{n} (x) d x = (-1)^{n + 1} \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1} + \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1} \\\\
+&amp; = \begin{cases} 0 &amp; (n \text{是偶数}) \\\\
 2 \phi_{0} \frac{P_{n - 1} (0) - P_{n + 1} (0)}{2 n + 1} &amp; (n \text{是奇数}) \end{cases}
 \end{aligned}
-$$
-即 } \frac{P_{n - 1} (0) - P_{n + 1} (0)}{2 n + 1} &amp; (n \text{是奇数}) \end{cases<span class="arithmatex">\(n\)</span> 是偶数时
-$$
+\]</div>
+<p>所以</p>
+<div class="arithmatex">\[
 \begin{aligned}
-B_{n} &amp;= \phi_{0} R_{0}^{n + 1} (P_{n - 1} (0) - P_{n + 1} (0)) \\
+\int_{-1}^{1} \frac{B_{n}}{R_{0}^{n + 1}} P_{n}^{2} (x) d x = \begin{cases} 0 &amp; (n \text{是偶数}) \\\\
+2 \phi_{0} \frac{P_{n - 1} (0) - P_{n + 1} (0)}{2 n + 1} &amp; (n \text{是奇数}) \end{cases}
+\end{aligned}
+\]</div>
+<p>即 <span class="arithmatex">\(n\)</span> 是偶数时</p>
+<div class="arithmatex">\[
+\begin{aligned}
+B_{n} &amp;= \phi_{0} R_{0}^{n + 1} (P_{n - 1} (0) - P_{n + 1} (0)) \\\\
 &amp;= (-1)^{\frac{n - 1}{2}} \phi_{0} R_{0}^{n + 1} \frac{(n - 2)!!}{(n + 1)!!} (2 n + 1)
 \end{aligned}
-$$
-所以
-$$
+\]</div>
+<p>所以</p>
+<div class="arithmatex">\[
 \phi (r, \theta) = \sum_{n = 0}^{\infty} (-1)^{n} (4n + 3) \frac{(2n - 1)!!}{(2n + 2)!!} \phi_{0} \left( \frac{R_{0}}{r} \right)^{2n + 2} P_{2n + 1} (\cos \theta)
-$$
-所以电势分布为
-$$
+\]</div>
+<p>所以电势分布为</p>
+<div class="arithmatex">\[
 \begin{aligned}
-\phi (r, \theta) &amp;= \begin{cases} \sum_{n = 0}^{\infty} (-1)^{n} (4n + 3) \frac{(2n - 1)!!}{(2n + 2)!!} \phi_{0} \left( \frac{r}{R_{0}} \right)^{2n + 1} P_{2n + 1} (\cos \theta) \qquad (r &lt; R_{0}) \\
+\phi (r, \theta) &amp;= \begin{cases} \sum_{n = 0}^{\infty} (-1)^{n} (4n + 3) \frac{(2n - 1)!!}{(2n + 2)!!} \phi_{0} \left( \frac{r}{R_{0}} \right)^{2n + 1} P_{2n + 1} (\cos \theta) \qquad (r &lt; R_{0}) \\\\
 \sum_{n = 0}^{\infty} (-1)^{n} (4n + 3) \frac{(2n - 1)!!}{(2n + 2)!!} \phi_{0} \left( \frac{R_{0}}{r} \right)^{2n + 2} P_{2n + 1} (\cos \theta) \qquad (r &gt; R_{0}) \end{cases}
 \end{aligned}
-$$
-提示：
-$$
+\]</div>
+<p>提示：</p>
+<div class="arithmatex">\[
 \int_{0}^{1} P_n(x) dx = \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1}
-$$
-$$
+\]</div>
+<div class="arithmatex">\[
 P_n(1)=1
-$$
-$$
+\]</div>
+<div class="arithmatex">\[
 \begin{aligned}
-P_n(0)=\begin{cases} 0 &amp; (n=奇数) \\
+P_n(0)=\begin{cases} 0 &amp; (n=奇数) \\\\
 (-1)^\frac{n}{2} \cdot \frac{1 \cdot 3 \cdot 5 \cdots (n-1)}{2 \cdot 4 \cdot 6 \cdots n} &amp; (n=偶数) \end{cases}
 \end{aligned}
-$$</p>
+\]</div>
 <h3 id="6">6. 格林函数</h3>
 <p>书2.19</p>
 <p>2.19 上题能用格林函数方法求解吗？结果如何？</p>
 <p>可以使用格林函数求解</p>
-<p>写出对于球形边界满足第一类边界条件的格林函数
-$$
+<p>写出对于球形边界满足第一类边界条件的格林函数</p>
+<div class="arithmatex">\[
 G (\vec{r}, \vec{r'}) = \frac{1}{4 \pi \epsilon_{0}} \left(\frac{1}{|\vec{r} - \vec{r'}|} - \frac{\frac{R_{0}}{r'}}{|\vec{r} - \frac{R_{0}^{2}}{r'^{2}} \vec{r'}|} \right)
-$$
-所以电势分布为
-$$
+\]</div>
+<p>所以电势分布为</p>
+<div class="arithmatex">\[
 \phi (\vec{r}) = - \epsilon_{0} \oint_{S} \phi (R_{0}, \alpha) d S' \frac{\partial G (\vec{r}, \vec{r'})}{\partial n'}
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 \begin{aligned}
 \frac{\partial G (\vec{r}, \vec{r'})}{\partial n'} &amp;= \hat{r'} \cdot \nabla' \frac{1}{4\pi\epsilon_0} \left( \frac{1}{|\vec{r} - \vec{r}'|} - \frac{\frac{R_{0}}{r'}}{|\vec{r} - \frac{R_0^2}{r'^2}\vec{r}'|} \right) \\\\
 &amp;= \hat{r'} \cdot \frac{1}{4 \pi \epsilon_{0}} \left(\frac{\vec{r} - \vec{r'}}{|\vec{r} - \vec{r'}|^{3}} + \frac{\frac{R_{0} \vec{r'}}{r'^{3}}}{|\vec{r} - \frac{R_0^2}{r'^2}\vec{r}'|} +  \frac{R_{0}}{r'}\frac{\vec{r} - \frac{R_0^2}{r'^2}\vec{r}'}{|\vec{r} - \frac{R_0^2}{r'^2}\vec{r}'|^{3}} \cdot (\frac{2 R_{0}^{2}}{r'^{4}} \vec{r'} \vec{r'} - \frac{R_{0}^{2}}{r'^{2}} \overset{\leftrightarrow}{I}) \right)
 \end{aligned}
 \]</div>
-<p>在 <span class="arithmatex">\(r' = R_{0}\)</span> 处
-$$
-\left. \frac{\partial G (\vec{r}, \vec{r'})}{\partial n'} \right|<em 0="0">{r' = R</em>
-$$
-所以
-$$
+<p>在 <span class="arithmatex">\(r' = R_{0}\)</span> 处</p>
+<div class="arithmatex">\[
+\left. \frac{\partial G (\vec{r}, \vec{r'})}{\partial n'} \right|_{r' = R_{0}} = - \frac{1}{4 \pi \epsilon_{0} R_{0}} \frac{|r^{2} - R_{0}^{2}|}{|\vec{r} - \vec{r'}|^{3}}
+\]</div>
+<p>所以</p>
+<div class="arithmatex">\[
 \phi (\vec{r}) = \oint_{S} \phi (R_{0}, \alpha) \frac{1}{4 \pi R_{0}} \frac{|r^{2} - R_{0}^{2}|}{|\vec{r} - \vec{r'}|^{3}}  d S'
-$$
-展开被积函数为勒让德多项式
-$$
+\]</div>
+<p>展开被积函数为勒让德多项式</p>
+<div class="arithmatex">\[
 \frac{1}{\sqrt{1 - 2 x t + t^{2}}} = \sum_{n} t^{n} P_{n} (x)
-$$
-两侧对 }} = - \frac{1}{4 \pi \epsilon_{0} R_{0}} \frac{|r^{2} - R_{0}^{2}|}{|\vec{r} - \vec{r'}|^{3}<span class="arithmatex">\(t\)</span> 偏导，所以
-$$
+\]</div>
+<p>两侧对 <span class="arithmatex">\(t\)</span> 偏导，所以</p>
+<div class="arithmatex">\[
 \frac{x - t}{(1 - 2xt + t^{2})^{\frac{3}{2}}} = \sum_{n} n t^{n - 1} P_{n} (x)
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 \begin{aligned}
 \frac{1 - t^{2}}{(1 - 2xt + t^{2})^{\frac{3}{2}}} &amp;= \frac{1 - 2xt + t^{2} + 2xt - 2t^{2}}{(1 - 2xt + t^{2})^{\frac{3}{2}}} = \frac{1}{\sqrt{1 - 2 x t + t^{2}}} + \frac{2t(x - t)}{(1 - 2xt + t^{2})^{\frac{3}{2}}} \\\\
@@ -4543,32 +4520,32 @@ $$</p>
 \end{aligned}
 \]</div>
 <p>带入 <span class="arithmatex">\(x = \cos \gamma\)</span> 以及 <span class="arithmatex">\(t = \frac{r_{&lt;}}{r_{&gt;}}\)</span> （<span class="arithmatex">\(\gamma\)</span> 为 <span class="arithmatex">\(\vec{r}\)</span> 与 <span class="arithmatex">\(\vec{r'}\)</span> 的夹角，<span class="arithmatex">\(\alpha\)</span> 为积分点和 <span class="arithmatex">\(z\)</span> 轴的夹角，<span class="arithmatex">\(\theta\)</span> 为场点和<span class="arithmatex">\(z\)</span> 轴的夹角）</p>
-<p>所以在球内（取 <span class="arithmatex">\(\alpha\)</span> 和 <span class="arithmatex">\(\phi\)</span> 为积分用的球坐标，其中<span class="arithmatex">\(\phi\)</span> 的起始位置为 <span class="arithmatex">\(\vec{r'}\)</span> 的投影位置）
-$$
+<p>所以在球内（取 <span class="arithmatex">\(\alpha\)</span> 和 <span class="arithmatex">\(\phi\)</span> 为积分用的球坐标，其中<span class="arithmatex">\(\phi\)</span> 的起始位置为 <span class="arithmatex">\(\vec{r'}\)</span> 的投影位置）</p>
+<div class="arithmatex">\[
 \begin{aligned}
-\phi (r, \theta) &amp;=  \frac{1}{4 \pi R_{0}^{2}} \oint_{S} \phi (R_{0}, \alpha) \sum_{n} (1 + 2n) (\frac{r}{R_{0}})^{n} P_{n} (\cos \gamma) d S' \\
-&amp;= \sum_{n} \frac{1 + 2n}{4 \pi} \int_{0}^{\pi} \int_{0}^{2 \pi} (\frac{r}{R_{0}})^{n} \phi (R_{0}, \alpha) P_{n} (\sin \theta \sin \alpha \cos \phi + \cos \theta \cos \alpha) \sin \alpha d \alpha d \phi \\
-&amp;= \sum_{n} \frac{1 + 2n}{4 \pi} \int_{0}^{\pi} \int_{0}^{2 \pi} (\frac{r}{R_{0}})^{n} \phi (R_{0}, \alpha) P_{n} (\cos \theta) P_{n} (\cos \alpha) \sin \alpha d \alpha d \phi \\
-&amp;= \sum_{n} \frac{1 + 2n}{2} \int_{0}^{\pi} (\frac{r}{R_{0}})^{n} \phi (R_{0}, \alpha) P_{n} (\cos \theta) P_{n} (\cos \alpha) \sin \alpha d \alpha \\
-&amp;= \sum_{n} \frac{1 + 2n}{2} (\frac{r}{R_{0}})^{n} P_{n} (\cos \theta) \int_{- 1}^{1} \phi (R_{0}, \alpha) P_{n} (\cos \alpha) \sin \alpha \, d (\cos \alpha) \\
-&amp;= \sum_{n} \frac{1 + 2n}{2} (\frac{r}{R_{0}})^{n} P_{n} (\cos \theta) \left(\int_{-1}^{0} - \phi_{0} P_{n} (x) d x + \int_{0}^{1} \phi_{0} P_{n} (x) d x \right) \\
-&amp;= \sum_{n} \frac{1 + 2n}{2} (\frac{r}{R_{0}})^{n} P_{n} (\cos \theta) \left((-1)^{n + 1} \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|<em 0="0">{0}^{1} + \phi</em> \right|} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1<em n="n">{0}^{1}\right) \\
-&amp;= \sum</em> (\cos \theta)
+\phi (r, \theta) &amp;=  \frac{1}{4 \pi R_{0}^{2}} \oint_{S} \phi (R_{0}, \alpha) \sum_{n} (1 + 2n) (\frac{r}{R_{0}})^{n} P_{n} (\cos \gamma) d S' \\\\
+&amp;= \sum_{n} \frac{1 + 2n}{4 \pi} \int_{0}^{\pi} \int_{0}^{2 \pi} (\frac{r}{R_{0}})^{n} \phi (R_{0}, \alpha) P_{n} (\sin \theta \sin \alpha \cos \phi + \cos \theta \cos \alpha) \sin \alpha d \alpha d \phi \\\\
+&amp;= \sum_{n} \frac{1 + 2n}{4 \pi} \int_{0}^{\pi} \int_{0}^{2 \pi} (\frac{r}{R_{0}})^{n} \phi (R_{0}, \alpha) P_{n} (\cos \theta) P_{n} (\cos \alpha) \sin \alpha d \alpha d \phi \\\\
+&amp;= \sum_{n} \frac{1 + 2n}{2} \int_{0}^{\pi} (\frac{r}{R_{0}})^{n} \phi (R_{0}, \alpha) P_{n} (\cos \theta) P_{n} (\cos \alpha) \sin \alpha d \alpha \\\\
+&amp;= \sum_{n} \frac{1 + 2n}{2} (\frac{r}{R_{0}})^{n} P_{n} (\cos \theta) \int_{- 1}^{1} \phi (R_{0}, \alpha) P_{n} (\cos \alpha) \sin \alpha \, d (\cos \alpha) \\\\
+&amp;= \sum_{n} \frac{1 + 2n}{2} (\frac{r}{R_{0}})^{n} P_{n} (\cos \theta) \left(\int_{-1}^{0} - \phi_{0} P_{n} (x) d x + \int_{0}^{1} \phi_{0} P_{n} (x) d x \right) \\\\
+&amp;= \sum_{n} \frac{1 + 2n}{2} (\frac{r}{R_{0}})^{n} P_{n} (\cos \theta) \left((-1)^{n + 1} \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1} + \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1}\right) \\\\
+&amp;= \sum_{n = 0}^{\infty} (-1)^{n} (4n + 3) \frac{(2n - 1)!!}{(2n + 2)!!} \phi_{0} \left( \frac{r}{R_{0}} \right)^{2n + 1} P_{2n + 1} (\cos \theta)
 \end{aligned}
-$$
-同理，在球外
-$$
+\]</div>
+<p>同理，在球外</p>
+<div class="arithmatex">\[
 \begin{aligned}
-\phi (r, \theta) &amp;= \frac{1}{4 \pi R_{0}^{2}} \oint_{S} \phi (R_{0}, \alpha) \sum_{n} (1 + 2n) (\frac{R_{0}}{r})^{n + 1} P_{n} (\cos \gamma) d S' \\
-&amp;= \sum_{n} \frac{1 + 2n}{4 \pi} \int_{0}^{\pi} \int_{0}^{2 \pi}(\frac{R_{0}}{r})^{n + 1} \phi (R_{0}, \alpha) P_{n} (\sin \theta \sin \alpha \cos \phi + \cos \theta \cos \alpha) \sin \alpha d \alpha d \phi \\
-&amp;= \sum_{n} \frac{1 + 2n}{4 \pi} \int_{0}^{\pi} \int_{0}^{2 \pi}(\frac{R_{0}}{r})^{n + 1} \phi (R_{0}, \alpha) P_{n} (\cos \theta) P_{n} (\cos \alpha) \sin \alpha d \alpha d \phi \\
-&amp;= \sum_{n} \frac{1 + 2n}{2} \int_{0}^{\pi} (\frac{R_{0}}{r})^{n + 1} \phi (R_{0}, \alpha) P_{n} (\cos \theta) P_{n} (\cos \alpha) \sin \alpha d \alpha \\
-&amp;= \sum_{n} \frac{1 + 2n}{2} (\frac{R_{0}}{r})^{n + 1} P_{n} (\cos \theta) \int_{- 1}^{1} \phi (R_{0}, \alpha) P_{n} (\cos \alpha) \sin \alpha \, d (\cos \alpha) \\
-&amp;= \sum_{n} \frac{1 + 2n}{2} (\frac{R_{0}}{r})^{n + 1} P_{n} (\cos \theta) \left(\int_{-1}^{0} - \phi_{0} P_{n} (x) d x + \int_{0}^{1} \phi_{0} P_{n} (x) d x \right) \\
-&amp;= \sum_{n} \frac{1 + 2n}{2} (\frac{R_{0}}{r})^{n + 1} P_{n} (\cos \theta) \left((-1)^{n + 1} \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|}^{\infty} (-1)^{n} (4n + 3) \frac{(2n - 1)!!}{(2n + 2)!!} \phi_{0} \left( \frac{r}{R_{0}} \right)^{2n + 1} P_{2n + 1<em 0="0">{0}^{1} + \phi</em> \right|} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1<em n="n">{0}^{1}\right) \\
-&amp;= \sum</em> (\cos \theta)
+\phi (r, \theta) &amp;= \frac{1}{4 \pi R_{0}^{2}} \oint_{S} \phi (R_{0}, \alpha) \sum_{n} (1 + 2n) (\frac{R_{0}}{r})^{n + 1} P_{n} (\cos \gamma) d S' \\\\
+&amp;= \sum_{n} \frac{1 + 2n}{4 \pi} \int_{0}^{\pi} \int_{0}^{2 \pi}(\frac{R_{0}}{r})^{n + 1} \phi (R_{0}, \alpha) P_{n} (\sin \theta \sin \alpha \cos \phi + \cos \theta \cos \alpha) \sin \alpha d \alpha d \phi \\\\
+&amp;= \sum_{n} \frac{1 + 2n}{4 \pi} \int_{0}^{\pi} \int_{0}^{2 \pi}(\frac{R_{0}}{r})^{n + 1} \phi (R_{0}, \alpha) P_{n} (\cos \theta) P_{n} (\cos \alpha) \sin \alpha d \alpha d \phi \\\\
+&amp;= \sum_{n} \frac{1 + 2n}{2} \int_{0}^{\pi} (\frac{R_{0}}{r})^{n + 1} \phi (R_{0}, \alpha) P_{n} (\cos \theta) P_{n} (\cos \alpha) \sin \alpha d \alpha \\\\
+&amp;= \sum_{n} \frac{1 + 2n}{2} (\frac{R_{0}}{r})^{n + 1} P_{n} (\cos \theta) \int_{- 1}^{1} \phi (R_{0}, \alpha) P_{n} (\cos \alpha) \sin \alpha \, d (\cos \alpha) \\\\
+&amp;= \sum_{n} \frac{1 + 2n}{2} (\frac{R_{0}}{r})^{n + 1} P_{n} (\cos \theta) \left(\int_{-1}^{0} - \phi_{0} P_{n} (x) d x + \int_{0}^{1} \phi_{0} P_{n} (x) d x \right) \\\\
+&amp;= \sum_{n} \frac{1 + 2n}{2} (\frac{R_{0}}{r})^{n + 1} P_{n} (\cos \theta) \left((-1)^{n + 1} \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1} + \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1}\right) \\\\
+&amp;= \sum_{n = 0}^{\infty} (-1)^{n} (4n + 3) \frac{(2n - 1)!!}{(2n + 2)!!} \phi_{0} \left( \frac{R_{0}}{r} \right)^{2n + 2} P_{2n + 1} (\cos \theta)
 \end{aligned}
-$$}^{\infty} (-1)^{n} (4n + 3) \frac{(2n - 1)!!}{(2n + 2)!!} \phi_{0} \left( \frac{R_{0}}{r} \right)^{2n + 2} P_{2n + 1</p>
+\]</div>
 
 
 
@@ -4679,6 +4656,8 @@ $$}^{\infty} (-1)^{n} (4n + 3) \frac{(2n - 1)!!}{(2n + 2)!!} \phi_{0} \left( \fr
     
     
       <script src="../../../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../../../../../custom_js/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

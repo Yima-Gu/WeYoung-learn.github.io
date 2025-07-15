@@ -2929,29 +2929,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw_11.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    hw_11
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../hw_12/" class="md-nav__link">
         
   
@@ -4299,7 +4276,7 @@ $$
 \nabla \cdot \mathbf{D} = 0
 $$</p>
 <div class="arithmatex">\[
-\nabla \cdot \mathbf{D}_{0} e^{i(\mathbf{k} \cdot \mathbf{x} - \omega t)} = i \mathbf{k} \cdot \mathbf{D} = 0
+\nabla \cdot \mathbf{D}\_{0} e^{i(\mathbf{k} \cdot \mathbf{x} - \omega t)} = i \mathbf{k} \cdot \mathbf{D} = 0
 \]</div>
 <p>由于
 $$
@@ -4307,8 +4284,8 @@ $$
 $$
 所以
 $$
-\nabla \times \mathbf{B}<em 0="0">{0} e^{i(\mathbf{k} \cdot \mathbf{x} - \omega t)} = \mu \frac{\partial}{\partial t} \mathbf{D}</em>
-$$} e^{i(\mathbf{k} \cdot \mathbf{x} - \omega t)</p>
+\nabla \times \mathbf{B}_{0} e^{i(\mathbf{k} \cdot \mathbf{x} - \omega t)} = \mu \frac{\partial}{\partial t} \mathbf{D}_{0} e^{i(\mathbf{k} \cdot \mathbf{x} - \omega t)}
+$$</p>
 <div class="arithmatex">\[
 \mathbf{k} \times \mathbf{B} =  - \mu \omega \mathbf{D}
 \]</div>
@@ -4321,8 +4298,8 @@ $$
 $$
 所以
 $$
-\nabla \times \mathbf{E}<em 0="0">{0} e^{i(\mathbf{k} \cdot \mathbf{x} - \omega t)} = - \frac{\partial}{\partial t} \mathbf{B}</em>
-$$} e^{i(\mathbf{k} \cdot \mathbf{x} - \omega t)</p>
+\nabla \times \mathbf{E}_{0} e^{i(\mathbf{k} \cdot \mathbf{x} - \omega t)} = - \frac{\partial}{\partial t} \mathbf{B}_{0} e^{i(\mathbf{k} \cdot \mathbf{x} - \omega t)}
+$$</p>
 <div class="arithmatex">\[
 \mathbf{k} \times \mathbf{E} =  \omega \mathbf{B}
 \]</div>
@@ -4354,9 +4331,9 @@ $$</p>
 \nabla \times \mathbf{E} &amp;= -\frac{\partial \mathbf{B}}{\partial t} \\\\
 \nabla \times \mathbf{B} &amp;= \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}
 \end{aligned}
-$$
-可以通过两个旋度方程导出散度方程如下：
-$$
+\]</div>
+<p>可以通过两个旋度方程导出散度方程如下：</p>
+<div class="arithmatex">\[
 \nabla \cdot (\nabla \times \mathbf{E}) = - \frac{\partial}{\partial t} (\nabla \cdot \mathbf{B}) = 0
 \]</div>
 <div class="arithmatex">\[
@@ -4388,7 +4365,7 @@ $$
 $$
 v_{g} = \frac{d \omega}{d k}
 $$
-(b) 试证,用复数方法得到的麦克斯韦方程组平面波解(包括 $\gamma \neq 0 $),在取实部后仍是麦克斯韦方程组的解.</p>
+(b) 试证,用复数方法得到的麦克斯韦方程组平面波解(包括 <span class="arithmatex">\(\gamma \neq 0\)</span>),在取实部后仍是麦克斯韦方程组的解.</p>
 <p>证明：</p>
 <p>使用复数法解麦克斯韦方程组：
 $$
@@ -4426,81 +4403,81 @@ $$
 所以对应的平面波解为：
 $$
 \begin{aligned}
-\mathbf{E} &amp;= (\mathbf{E}<em 0I="0I">{0R} + i \mathbf{E}</em>}) e^{i(\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t) - \mathbf{k}</em> \\
-\mathbf{B} &amp;= (\mathbf{B}} \cdot \mathbf{r}<em 0I="0I">{0R} + i \mathbf{B}</em>}) e^{i(\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t) - \mathbf{k}</em>
+\mathbf{E} &amp;= (\mathbf{E}_{0R} + i \mathbf{E}_{0I}) e^{i(\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{k}_{I} \cdot \mathbf{r}} \\
+\mathbf{B} &amp;= (\mathbf{B}_{0R} + i \mathbf{B}_{0I}) e^{i(\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{k}_{I} \cdot \mathbf{r}}
 \end{aligned}
 $$
 并且有
 $$
 \begin{aligned}
-\mathbf{E}} \cdot \mathbf{r}<em R="R">{0R} \cdot \mathbf{k}</em>} - \mathbf{E<em I="I">{0I} \cdot \mathbf{k}</em> &amp;= 0 \\
-\mathbf{E}<em R="R">{0I} \cdot \mathbf{k}</em>} + \mathbf{E<em I="I">{0R} \cdot \mathbf{k}</em> &amp;= 0 \\
-\mathbf{B}<em R="R">{0R} &amp;= \frac{\mathbf{k}</em>}}{\omega} \times \mathbf{E<em I="I">{0R} - \frac{\mathbf{k}</em>}}{\omega} \times \mathbf{E<em 0I="0I">{0I} \\
-\mathbf{B}</em>} &amp;= \frac{\mathbf{k<em 0R="0R">{I}}{\omega} \times \mathbf{E}</em>} + \frac{\mathbf{k<em 0I="0I">{R}}{\omega} \times \mathbf{E}</em> \\
-\mathbf{B}<em R="R">{0R} \cdot \mathbf{k}</em>} - \mathbf{B<em I="I">{0I} \cdot \mathbf{k}</em> &amp;= 0 \\
-\mathbf{B}<em R="R">{0I} \cdot \mathbf{k}</em>} + \mathbf{B<em I="I">{0R} \cdot \mathbf{k}</em> &amp;= 0
+\mathbf{E}_{0R} \cdot \mathbf{k}_{R} - \mathbf{E}_{0I} \cdot \mathbf{k}_{I} = 0 \\
+\mathbf{E}_{0I} \cdot \mathbf{k}_{R} + \mathbf{E}_{0R} \cdot \mathbf{k}_{I} = 0 \\
+\mathbf{B}_{0R} = \frac{\mathbf{k}_{R}}{\omega} \times \mathbf{E}_{0R} - \frac{\mathbf{k}_{I}}{\omega} \times \mathbf{E}_{0I} \\
+\mathbf{B}_{0I} = \frac{\mathbf{k}_{I}}{\omega} \times \mathbf{E}_{0R} + \frac{\mathbf{k}_{R}}{\omega} \times \mathbf{E}_{0I} \\
+\mathbf{B}_{0R} \cdot \mathbf{k}_{R} - \mathbf{B}_{0I} \cdot \mathbf{k}_{I} = 0 \\
+\mathbf{B}_{0I} \cdot \mathbf{k}_{R} + \mathbf{B}_{0R} \cdot \mathbf{k}_{I} = 0
 \end{aligned}
 $$</p>
 <p>取实部：
 $$
 \begin{aligned}
-\Re [\mathbf{E}] &amp;= (\mathbf{E}<em R="R">{0R} \cos (\mathbf{k}</em>} \cdot \mathbf{r} - \omega t) - \mathbf{E<em R="R">{0I} \sin (\mathbf{k}</em>} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k<em 0R="0R">{I} \cdot \mathbf{r}} \\
-\Re [\mathbf{B}] &amp;= (\mathbf{B}</em>} \cos (\mathbf{k<em 0I="0I">{R} \cdot \mathbf{r} - \omega t) - \mathbf{B}</em>} \sin (\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}</em>
+\Re [\mathbf{E}] &amp;= (\mathbf{E}_{0R} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{E}_{0I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\
+\Re [\mathbf{B}] &amp;= (\mathbf{B}_{0R} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{B}_{0I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}
 \end{aligned}
-$$
-带入麦克斯韦方程组：
-$$
+$$</p>
+<p>带入麦克斯韦方程组：</p>
+<p>$$
 \begin{aligned}
-&amp;\nabla \cdot (\mathbf{E}} \cdot \mathbf{r}<em R="R">{0R} \cos (\mathbf{k}</em>} \cdot \mathbf{r} - \omega t) - \mathbf{E<em R="R">{0I} \sin (\mathbf{k}</em>} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k<em 0Ri="0Ri">{I} \cdot \mathbf{r}} \\
-&amp;= \mathbf{E}</em>} \partial_{i} (\cos (\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}</em>} \cdot \mathbf{r}}) - \mathbf{E<em i="i">{0Ii} \partial</em>} (\sin (\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}</em>) \\
-&amp;= \mathbf{E}} \cdot \mathbf{r}<em Ri="Ri">{0Ri} (- \mathbf{k}</em>} \sin (\mathbf{k<em Ii="Ii">{R} \cdot \mathbf{r} - \omega t)- \mathbf{k}</em>} \cos (\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}</em>  - \\
-\mathbf{E}} \cdot \mathbf{r}<em Ri="Ri">{0Ii} (\mathbf{k}</em>} \cos (\mathbf{k<em Ii="Ii">{R} \cdot \mathbf{r} - \omega t) - \mathbf{k}</em>} \sin (\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t)) e ^{- \mathbf{k}</em> \\
-&amp;= e^{- \mathbf{k}} \cdot \mathbf{r}<em 0R="0R">{I} \cdot \mathbf{r}} (- (\mathbf{E}</em>} \cdot \mathbf{k<em 0I="0I">{I} + \mathbf{E}</em>} \cdot \mathbf{k<em R="R">{R}) \cos (\mathbf{k}</em>} \cdot \mathbf{r} - \omega t) + (\mathbf{E<em I="I">{0I} \cdot \mathbf{k}</em>} - \mathbf{E<em R="R">{0R} \cdot \mathbf{k}</em> - \omega t)) \\
+&amp;\nabla \cdot (\mathbf{E}_{0R} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{E}_{0I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\
+&amp;= \mathbf{E}_{0Ri} \partial_{i} (\cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) - \mathbf{E}_{0Ii} \partial_{i} (\sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \\
+&amp;= \mathbf{E}_{0Ri} (- \mathbf{k}_{Ri} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)- \mathbf{k}_{Ii} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}  - \\
+&amp;\mathbf{E}_{0Ii} (\mathbf{k}_{Ri} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{k}_{Ii} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e ^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\
+&amp;= e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (- (\mathbf{E}_{0R} \cdot \mathbf{k}_{I} + \mathbf{E}_{0I} \cdot \mathbf{k}_{R}) \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) + (\mathbf{E}_{0I} \cdot \mathbf{k}_{I} - \mathbf{E}_{0R} \cdot \mathbf{k}_{R}) \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) \\
 &amp;= 0
 \end{aligned}
 $$
-磁场同理。}) \sin (\mathbf{k}_{R} \cdot \mathbf{r</p>
+磁场同理。</p>
 <p>考虑旋度方程：
 $$
 \begin{aligned}
-&amp;\nabla \times (\mathbf{E}<em R="R">{0R} \cos (\mathbf{k}</em>} \cdot \mathbf{r} - \omega t) - \mathbf{E<em R="R">{0I} \sin (\mathbf{k}</em>} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k<em R="R">{I} \cdot \mathbf{r}} \\
-&amp;= \nabla (\cos (\mathbf{k}</em>} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k<em 0R="0R">{I} \cdot \mathbf{r}}) \times \mathbf{E}</em>} - \nabla (\sin (\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t)  e^{- \mathbf{k}</em>} \cdot \mathbf{r}}) \times \mathbf{E<em R="R">{0I} \\
-&amp;= (- \mathbf{k}</em>} \sin (\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}</em>} \cdot \mathbf{r}} - \mathbf{k<em R="R">{I} \cos (\mathbf{k}</em>} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k<em 0R="0R">{I} \cdot \mathbf{r}}) \times \mathbf{E}</em> - \\
-( \mathbf{k}<em R="R">{R} \cos(\mathbf{k}</em>} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k<em I="I">{I} \cdot \mathbf{r}} -  \mathbf{k}</em>} \sin (\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}</em>} \cdot \mathbf{r}}) \times \mathbf{E<em R="R">{0I} \\
-&amp;= - \cos (\mathbf{k}</em>} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k<em 0I="0I">{I} \cdot \mathbf{r}} \mathbf{B}</em>} \omega - \sin (\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}</em>
+&amp;\nabla \times (\mathbf{E}_{0R} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{E}_{0I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\
+&amp;= \nabla (\cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{E}_{0R} - \nabla (\sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)  e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{E}_{0I} \\
+&amp;= (- \mathbf{k}_{R} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} - \mathbf{k}_{I} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{E}_{0R} - \\
+&amp;( \mathbf{k}_{R} \cos(\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} -  \mathbf{k}_{I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{E}_{0I} \\
+&amp;= - \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \mathbf{B}_{0I} \omega - \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \mathbf{B}_{0R} \omega = - \frac{\partial}{\partial t} \mathbf{B}
 \end{aligned}
-$$} \cdot \mathbf{r}} \mathbf{B}_{0R} \omega = - \frac{\partial}{\partial t} \mathbf{B</p>
+$$</p>
 <div class="arithmatex">\[
 \begin{aligned}
-\nabla \times \mathbf{B} &amp;= \nabla \times (\mathbf{B}_{0R} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{B}_{0I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\\\
-&amp;= \nabla (\cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{B}_{0R} - \nabla (\sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)  e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{B}_{0I} \\\\
-&amp;= (- \mathbf{k}_{R} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} - \mathbf{k}_{I} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{B}_{0R} - \\\\
-( \mathbf{k}_{R} \cos(\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} -  \mathbf{k}_{I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{B}_{0I} \\\\
-&amp;= - \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (\mathbf{k}_{I} \times \mathbf{B}_{0R} + \mathbf{k}_{R} \times \mathbf{B}_{0I}) - \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (\mathbf{k}_{R} \times \mathbf{B}_{0R} - \mathbf{k}_{I} \times \mathbf{B}_{0I})
+\nabla \times \mathbf{B} &amp;= \nabla \times (\mathbf{B}\_{0R} \cos (\mathbf{k}\_{R} \cdot \mathbf{r} - \omega t) - \mathbf{B}\_{0I} \sin (\mathbf{k}\_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}\_{I} \cdot \mathbf{r}} \\\\
+&amp;= \nabla (\cos (\mathbf{k}\_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}\_{I} \cdot \mathbf{r}}) \times \mathbf{B}\_{0R} - \nabla (\sin (\mathbf{k}\_{R} \cdot \mathbf{r} - \omega t)  e^{- \mathbf{k}\_{I} \cdot \mathbf{r}}) \times \mathbf{B}\_{0I} \\\\
+&amp;= (- \mathbf{k}\_{R} \sin (\mathbf{k}\_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}\_{I} \cdot \mathbf{r}} - \mathbf{k}\_{I} \cos (\mathbf{k}\_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}\_{I} \cdot \mathbf{r}}) \times \mathbf{B}\_{0R} - \\\\
+&amp; ( \mathbf{k}\_{R} \cos(\mathbf{k}\_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}\_{I} \cdot \mathbf{r}} -  \mathbf{k}\_{I} \sin (\mathbf{k}\_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}\_{I} \cdot \mathbf{r}}) \times \mathbf{B}\_{0I} \\\\
+&amp;= - \cos (\mathbf{k}\_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}\_{I} \cdot \mathbf{r}} (\mathbf{k}\_{I} \times \mathbf{B}\_{0R} + \mathbf{k}\_{R} \times \mathbf{B}\_{0I}) - \sin (\mathbf{k}\_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}\_{I} \cdot \mathbf{r}} (\mathbf{k}\_{R} \times \mathbf{B}\_{0R} - \mathbf{k}\_{I} \times \mathbf{B}\_{0I})
 \end{aligned}
 \]</div>
 <p>由于
 $$
 \begin{aligned}
-&amp;\mathbf{k}<em 0R="0R">{I} \times \mathbf{B}</em>} + \mathbf{k<em 0I="0I">{R} \times \mathbf{B}</em> \\
-&amp;= \mathbf{k}<em R="R">{I} \times (\frac{\mathbf{k}</em>}}{\omega} \times \mathbf{E<em I="I">{0R} - \frac{\mathbf{k}</em>}}{\omega} \times \mathbf{E<em R="R">{0I}) + \mathbf{k}</em>} \times (\frac{\mathbf{k<em 0R="0R">{I}}{\omega} \times \mathbf{E}</em>} + \frac{\mathbf{k<em 0I="0I">{R}}{\omega} \times \mathbf{E}</em>) \\
-&amp;= \frac{1}{\omega} ((\mathbf{k}<em 0R="0R">{R} \cdot \mathbf{E}</em>}) \mathbf{k<em I="I">{I} + (\mathbf{k}</em>} \cdot \mathbf{E<em R="R">{0R}) \mathbf{k}</em>} - 2 (\mathbf{k<em R="R">{I} \cdot \mathbf{k}</em>}) \mathbf{E<em R="R">{0R} + (\mathbf{k}</em>} \cdot \mathbf{E<em R="R">{0I}) \mathbf{k}</em>} - (\mathbf{k<em 0I="0I">{I} \cdot \mathbf{E}</em>}) \mathbf{k<em I="I">{I} + (\mathbf{k}</em>}^{2} - \mathbf{k<em 0I="0I">{R}^{2}) \mathbf{E}</em>) \\
-&amp;= \frac{1}{\omega} (- \mu \epsilon \omega^{2} \mathbf{E}<em 0R="0R">{0I} - \gamma \mu \omega \mathbf{E}</em>}) = - \mu \epsilon \omega \mathbf{E<em 0R="0R">{0I} - \gamma \mu \mathbf{E}</em>
+&amp;\mathbf{k}_{I} \times \mathbf{B}_{0R} + \mathbf{k}_{R} \times \mathbf{B}_{0I} \\
+&amp;= \mathbf{k}_{I} \times (\frac{\mathbf{k}_{R}}{\omega} \times \mathbf{E}_{0R} - \frac{\mathbf{k}_{I}}{\omega} \times \mathbf{E}_{0I}) + \mathbf{k}_{R} \times (\frac{\mathbf{k}_{I}}{\omega} \times \mathbf{E}_{0R} + \frac{\mathbf{k}_{R}}{\omega} \times \mathbf{E}_{0I}) \\
+&amp;= \frac{1}{\omega} ((\mathbf{k}_{R} \cdot \mathbf{E}_{0R}) \mathbf{k}_{I} + (\mathbf{k}_{I} \cdot \mathbf{E}_{0R}) \mathbf{k}_{R} - 2 (\mathbf{k}_{I} \cdot \mathbf{k}_{R}) \mathbf{E}_{0R} + (\mathbf{k}_{R} \cdot \mathbf{E}_{0I}) \mathbf{k}_{R} - (\mathbf{k}_{I} \cdot \mathbf{E}_{0I}) \mathbf{k}_{I} + (\mathbf{k}_{I}^{2} - \mathbf{k}_{R}^{2}) \mathbf{E}_{0I}) \\
+&amp;= \frac{1}{\omega} (- \mu \epsilon \omega^{2} \mathbf{E}_{0I} - \gamma \mu \omega \mathbf{E}_{0R}) = - \mu \epsilon \omega \mathbf{E}_{0I} - \gamma \mu \mathbf{E}_{0R}
 \end{aligned}
 $$</p>
 <div class="arithmatex">\[
 \begin{aligned}
-&amp;\mathbf{k}_{R} \times \mathbf{B}_{0R} - \mathbf{k}_{I} \times \mathbf{B}_{0I} \\\\
-&amp;= \mathbf{k}_{R} \times (\frac{\mathbf{k}_{R}}{\omega} \times \mathbf{E}_{0R} - \frac{\mathbf{k}_{I}}{\omega} \times \mathbf{E}_{0I}) - \mathbf{k}_{I} \times (\frac{\mathbf{k}_{I}}{\omega} \times \mathbf{E}_{0R} + \frac{\mathbf{k}_{R}}{\omega} \times \mathbf{E}_{0I}) \\\\
-&amp;= \frac{1}{\omega} (- (\mathbf{k}_{R} \cdot \mathbf{E}_{0I}) \mathbf{k}_{I} - (\mathbf{k}_{I} \cdot \mathbf{E}_{0I}) \mathbf{k}_{R} + 2 (\mathbf{k}_{I} \cdot \mathbf{k}_{R}) \mathbf{E}_{0I} + (\mathbf{k}_{R} \cdot \mathbf{E}_{0R}) \mathbf{k}_{R} - (\mathbf{k}_{I} \cdot \mathbf{E}_{0R}) \mathbf{k}_{I} + (\mathbf{k}_{I}^{2} - \mathbf{k}_{R}^{2}) \mathbf{E}_{0R}) \\\\
-&amp;= \frac{1}{\omega} (- \mu \epsilon \omega^{2} \mathbf{E}_{0R} + \gamma \mu \omega \mathbf{E}_{0I}) = - \mu \epsilon \omega \mathbf{E}_{0R} + \gamma \mu \mathbf{E}_{0I}
+&amp;\mathbf{k}\_{R} \times \mathbf{B}\_{0R} - \mathbf{k}\_{I} \times \mathbf{B}\_{0I} \\\\
+&amp;= \mathbf{k}\_{R} \times (\frac{\mathbf{k}\_{R}}{\omega} \times \mathbf{E}\_{0R} - \frac{\mathbf{k}\_{I}}{\omega} \times \mathbf{E}\_{0I}) - \mathbf{k}\_{I} \times (\frac{\mathbf{k}\_{I}}{\omega} \times \mathbf{E}\_{0R} + \frac{\mathbf{k}\_{R}}{\omega} \times \mathbf{E}\_{0I}) \\\\
+&amp;= \frac{1}{\omega} (- (\mathbf{k}\_{R} \cdot \mathbf{E}\_{0I}) \mathbf{k}\_{I} - (\mathbf{k}\_{I} \cdot \mathbf{E}\_{0I}) \mathbf{k}\_{R} + 2 (\mathbf{k}\_{I} \cdot \mathbf{k}\_{R}) \mathbf{E}\_{0I} + (\mathbf{k}\_{R} \cdot \mathbf{E}\_{0R}) \mathbf{k}\_{R} - (\mathbf{k}\_{I} \cdot \mathbf{E}\_{0R}) \mathbf{k}\_{I} + (\mathbf{k}\_{I}^{2} - \mathbf{k}\_{R}^{2}) \mathbf{E}\_{0R}) \\\\
+&amp;= \frac{1}{\omega} (- \mu \epsilon \omega^{2} \mathbf{E}\_{0R} + \gamma \mu \omega \mathbf{E}\_{0I}) = - \mu \epsilon \omega \mathbf{E}\_{0R} + \gamma \mu \mathbf{E}\_{0I}
 \end{aligned}
 \]</div>
 <p>所以
 $$
 \begin{aligned}
-&amp;- \cos (\mathbf{k}<em I="I">{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}</em>} \cdot \mathbf{r}} (\mathbf{k<em 0R="0R">{I} \times \mathbf{B}</em>} + \mathbf{k<em 0I="0I">{R} \times \mathbf{B}</em>}) - \sin (\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}</em>} \cdot \mathbf{r}} (\mathbf{k<em 0R="0R">{R} \times \mathbf{B}</em>} - \mathbf{k<em 0I="0I">{I} \times \mathbf{B}</em>) \\
-&amp;= - \cos (\mathbf{k}<em I="I">{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}</em>} \cdot \mathbf{r}} (- \mu \epsilon \omega \mathbf{E<em 0R="0R">{0I} - \gamma \mu \mathbf{E}</em>}) - \sin (\mathbf{k<em I="I">{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}</em>} \cdot \mathbf{r}} (- \mu \epsilon \omega \mathbf{E<em 0I="0I">{0R} + \gamma \mu \mathbf{E}</em>) \\
+&amp;- \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (\mathbf{k}_{I} \times \mathbf{B}_{0R} + \mathbf{k}_{R} \times \mathbf{B}_{0I}) - \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (\mathbf{k}_{R} \times \mathbf{B}_{0R} - \mathbf{k}_{I} \times \mathbf{B}_{0I}) \\
+&amp;= - \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (- \mu \epsilon \omega \mathbf{E}_{0I} - \gamma \mu \mathbf{E}_{0R}) - \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (- \mu \epsilon \omega \mathbf{E}_{0R} + \gamma \mu \mathbf{E}_{0I}) \\
 &amp;= \mu (\gamma \mathbf{E} + \epsilon \frac{\partial}{\partial t} \mathbf{E})
 \end{aligned}
 $$
@@ -4563,11 +4540,11 @@ k_{I}^{2} = \frac{- \mu \epsilon \omega^{2} + \sqrt{(\mu \epsilon \omega^{2})^{2
 $$
 进入部分的电磁波能流：
 $$
-\mathbf{S} = \Re[\mathbf{E} \times \mathbf{H}] = \Re[\mathbf{E} \times (\frac{\mathbf{k}}{\mu \omega} \times \mathbf{E})] = t^{2} \mathbf{E}<em R="R">{0}^{2} \frac{\mathbf{k</em>
+\mathbf{S} = \Re[\mathbf{E} \times \mathbf{H}] = \Re[\mathbf{E} \times (\frac{\mathbf{k}}{\mu \omega} \times \mathbf{E})] = t^{2} \mathbf{E}_{0}^{2} \frac{\mathbf{k_{R}}}{\mu \omega}
 $$
 所以
 $$
-&lt;\mathbf{S}&gt; = \frac{1}{2} t^{2} \mathbf{E}}}}{\mu \omega<em R="R">{0}^{2} \frac{\mathbf{k}</em>
+&lt;\mathbf{S}&gt; = \frac{1}{2} t^{2} \mathbf{E}_{0}^{2} \frac{\mathbf{k}_{R}}{\omega}
 $$
 焦耳热：
 $$
@@ -4579,34 +4556,34 @@ w = \frac{1}{\gamma} j^{2} = \gamma \mathbf{E}^{2}
 $$
 带入上一题推导出的衰减结果
 $$
-\mathbf{E} = t \mathbf{E}}}{\omega<em R="R">{0} e^{i(k</em>
-$$} z - \omega t) - k_{I} z</p>
+\mathbf{E} = t \mathbf{E}_{0} e^{i(k_{R} z - \omega t) - k_{I} z}
+$$</p>
 <div class="arithmatex">\[
 &lt;w&gt; = \frac{1}{2} \gamma t^{2} \mathbf{E}_{0}^{2} e^{- 2 k_{I} z}
 \]</div>
-<p>所以
+<p>所以</p>
+<div class="arithmatex">\[
+\int_{0}^{\infty} \langle w \rangle d z = \frac{\gamma t^{2} \mathbf{E}_{0}^{2}}{4 k_{I}}
+\]</div>
+<p>由于<span class="arithmatex">\(2 k_{R} k_{I} = \gamma \mu \omega\)</span>，所以
 $$
-\int_{0}^{\infty} <w> dz = \frac{\gamma t^{2} \mathbf{E}<em I="I">{0}^{2}}{4 k</em>
+\frac{\gamma t^{2} \mathbf{E}_{0}^{2}}{4 k_{I}} =  \frac{1}{2} t^{2} \mathbf{E}_{0}^{2} \frac{k_{R}}{\mu \omega}
 $$
-由于}<span class="arithmatex">\(2 k_{R} k_{I} = \gamma \mu \omega\)</span>，所以
-$$
-\frac{\gamma t^{2} \mathbf{E}<em I="I">{0}^{2}}{4 k</em>}} =  \frac{1}{2} t^{2} \mathbf{E<em R="R">{0}^{2} \frac{k</em>
-$$
-即入射能量全部转化为焦耳热。}}{\mu \omega</p>
-<p>(b) 试证：当入射波电场垂直入射面时，反射和透射振幅满足：
-$$
-\vec{E}<em 10_perp="10\perp">{20\perp} = \frac{2 E</em>} \vec{e<em 2z="2z">y}{1 + \frac{\mu_1 k</em>
-$$
-$$
-\vec{E}}}{\mu_2 k_1 \cos \theta_1}<em 2z="2z">{30\perp} = \frac{1 - \frac{\mu_1 k</em>}}{\mu_2 k_1 \cos \theta_1}}{1 + \frac{\mu_1 k_{2z}}{\mu_2 k_1 \cos \theta_1}} E_{10\perp} \vec{e<em 20_perp="20\perp">y
-$$
-进一步当 <span class="arithmatex">\(\mu_1 = \mu_2, \gamma_2 = 0\)</span> 时，它们化为：
-$$
-\vec{E}</em>} = \frac{2 \cos \theta_1 \sin \theta_2}{\sin (\theta_1 + \theta_2)} E_{10\perp} \vec{e<em 30_perp="30\perp">y
-$$
-$$
-\vec{E}</em>_y
-$$} = \frac{\sin (\theta_2 - \theta_1)}{\sin (\theta_2 + \theta_1)} E_{10\perp} \vec{e</p>
+即入射能量全部转化为焦耳热。</p>
+<p>(b) 试证：当入射波电场垂直入射面时，反射和透射振幅满足：</p>
+<div class="arithmatex">\[
+\vec{E}_{20\perp} = \frac{2 E_{10\perp} \vec{e}_y}{1 + \frac{\mu_1 k_{2z}}{\mu_2 k_1 \cos \theta_1}}
+\]</div>
+<div class="arithmatex">\[
+\vec{E}_{30\perp} = \frac{1 - \frac{\mu_1 k_{2z}}{\mu_2 k_1 \cos \theta_1}}{1 + \frac{\mu_1 k_{2z}}{\mu_2 k_1 \cos \theta_1}} E_{10\perp} \vec{e}_y
+\]</div>
+<p>进一步当 <span class="arithmatex">\(\mu_1 = \mu_2, \gamma_2 = 0\)</span> 时，它们化为：</p>
+<div class="arithmatex">\[
+\vec{E}_{20\perp} = \frac{2 \cos \theta_1 \sin \theta_2}{\sin (\theta_1 + \theta_2)} E_{10\perp} \vec{e}_y
+\]</div>
+<div class="arithmatex">\[
+\vec{E}_{30\perp} = \frac{\sin (\theta_2 - \theta_1)}{\sin (\theta_2 + \theta_1)} E_{10\perp} \vec{e}_y
+\]</div>
 <p>证明：当入射波电场垂直入射时，电磁波在介质界面处满足以下边界条件：（下述所有电磁场和波矢均为复数）</p>
 <p>电场的切向分量连续：
 $$
@@ -4622,15 +4599,15 @@ $$
 $$
 入射波的磁场：
 $$
-\mathbf{H}_1 = \frac{\mathbf{k}_1 \times \mathbf{E}_1}{\omega \mu_1}
+\mathbf{H}_{1} = \frac{\mathbf{k}_{1} \times \mathbf{E}_{1}}{\omega \mu_1}
 $$
 反射波的磁场：
 $$
-\mathbf{H}_3 = \frac{\mathbf{k}_1 \times \mathbf{E}_3}{\omega \mu_1}
+\mathbf{H}_{3} = \frac{\mathbf{k}_{1} \times \mathbf{E}_{3}}{\omega \mu_1}
 $$
 透射波的磁场：
 $$
-\mathbf{H}_2 = \frac{\mathbf{k}_2 \times \mathbf{E}_2}{\omega \mu_2}
+\mathbf{H}_{2} = \frac{\mathbf{k}_{2} \times \mathbf{E}_{2}}{\omega \mu_2}
 $$
 将磁场分量代入边界条件：</p>
 <p>磁场的 <span class="arithmatex">\(x\)</span>分量连续：
@@ -4671,48 +4648,49 @@ $$
 $$
 E_{30\perp} = \frac{\sin (\theta_2 - \theta_1)}{\sin (\theta_2 + \theta_1)} E_{10\perp}
 $$</p>
-<p>(c) 试证明：
-$$
-D_{\parallel} = \frac{4 \mu_1 \cos \theta_1 \text{Re} \left( \frac{k_2 k_{2z}^<em>}{k_{2}^{</em>}} \right)}{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2}
-$$
-$$
+<p>(c) 试证明：</p>
+<div class="arithmatex">\[
+D_{\parallel} = \frac{4 \mu_1 \cos \theta_1 \text{Re} \left( \frac{k_2 k_{2z}^*}{k_{2}^{*}} \right)}{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2}
+\]</div>
+<div class="arithmatex">\[
 R_{\parallel} = \left| \frac{\frac{k_{2z}}{k_2} - \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1}{\frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1} \right|^{2}
-$$
-$$
+\]</div>
+<div class="arithmatex">\[
 D_{\parallel} + R_{\parallel} = 1
-$$</p>
+\]</div>
 <p>证明：</p>
-<p>对于平行时的能流透射与反射：用和（b）问相似的方法，容易得到
-$$
+<p>对于平行时的能流透射与反射：用和（b）问相似的方法，容易得到</p>
+<div class="arithmatex">\[
 E_{30 \parallel} = \frac{- \frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}} E_{10 \parallel}
-$$</p>
+\]</div>
 <div class="arithmatex">\[
 E_{20 \parallel} = \frac{2 \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}} E_{10 \parallel}
 \]</div>
-<p>所以能流的透射：
-$$
-D_{\parallel} = \frac{\mathbf{S}<em 1="1" _parallel="\parallel" z="z">{2 \parallel z}}{\mathbf{S}</em>}} =  \frac{\frac{1}{2 \mu_{2} \omega} (k_{2Rz} \mathbf{E<em 2="2" _parallel="\parallel" z="z">{2 \parallel}^{2} - \Re [E</em>} (\mathbf{k<em 2="2" _parallel="\parallel">{2} \cdot \mathbf{E}</em>
-$$}^{*})])}{\frac{1}{2 \mu_{1} \omega} (k_{1Rz}  \mathbf{E}_{1 \parallel}^{2})</p>
-<p>带入<span class="arithmatex">\(\frac{\mathbf{E}_{2 \parallel}^{2}}{\mathbf{E}_{1 \parallel}^{2}} = \left|\frac{2 \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}}\right|^{2}\)</span>以及 <span class="arithmatex">\(k_{1Rz} = k_{1} \cos \theta_{1}\)</span> </p>
-<p>由于 <span class="arithmatex">\(\mathbf{k}_{2} \cdot \mathbf{E}_{2 \parallel} = 0\)</span> ，所以
-$$
-\begin{aligned}
-\Re [E_{2 \parallel z} (\mathbf{k}<em 2="2" _parallel="\parallel">{2} \cdot \mathbf{E}</em>^{<em>})] &amp;= - \Re [E_{2 \parallel z} (\mathbf{k}<em 2="2" _parallel="\parallel">{2} \cdot 2 \Im [\mathbf{E}</em>])] \\
-&amp;= - \Re [|\mathbf{E_{2 \parallel}}| \frac{k_{2z}}{ |\mathbf{k_{2}}|} (\mathbf{k}<em 2="2" _parallel="\parallel">{2} \cdot 2 \Im [\mathbf{E}</em>}])]  = \mathbf{E<em 2="2">{2}^{2} \left( - \Re[k</em>^{} \frac{k_{2z}}{k_{2}</em>}] + \Re[k_{2z}] \right)
-\end{aligned}
-$$
-得到：
-$$
-\begin{aligned}
-\frac{\frac{1}{2 \mu_{2} \omega} (k_{2Rz} \mathbf{E}<em 2="2" _parallel="\parallel" z="z">{2 \parallel}^{2} - \Re [E</em>} (\mathbf{k<em 2="2" _parallel="\parallel">{2} \cdot \mathbf{E}</em>^{<em>})])}{\frac{1}{2 \mu_{1} \omega} (k_{1Rz}  \mathbf{E}<em 1="1">{1 \parallel}^{2})} &amp;= \frac{\mu</em>^{}}{\mu_{2} k_{1} \cos \theta_{1}} \left| \frac{2 \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}} \right|^{2} \Re [k_{2} \frac{k_{2z</em>}}{k_{2}^{<em>}}] \\
-&amp;= \frac{4 \mu_1 \cos \theta_1 \text{Re} \left( \frac{k_2 k_{2z}^</em>}{k_{2}^{*}} \right)}{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2}
-\end{aligned}
-$$</p>
+<p>所以能流的透射：</p>
 <div class="arithmatex">\[
-R_{\parallel} = \frac{\mathbf{S}_{3 \parallel z}}{\mathbf{S}_{1 \parallel z}} =  \frac{\frac{1}{2 \mu_{1} \omega} (k_{2Rz} \mathbf{E}_{3 \parallel}^{2})}{\frac{1}{2 \mu_{1} \omega} (k_{1Rz}  \mathbf{E}_{1 \parallel}^{2})}
-$$
-带入$\frac{\mathbf{E}_{3 \parallel}^{2}}{\mathbf{E}_{1 \parallel}^{2}} = \left| \frac{- \frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}} \right|^{2}$ 以及 $k_{1Rz} = k_{1} \cos \theta_{1}$ $k_{3Rz} = k_{3} \cos \theta_{1}$ 
-$$
+D_{\parallel} = \frac{\mathbf{S}\_{2 \parallel z}}{\mathbf{S}\_{1 \parallel z}} =  \frac{\frac{1}{2 \mu_{2} \omega} (k_{2Rz} \mathbf{E}\_{2 \parallel}^{2} - \Re [E_{2 \parallel z} (\mathbf{k}\_{2} \cdot \mathbf{E}\_{2 \parallel}^{*})])}{\frac{1}{2 \mu_{1} \omega} (k_{1Rz}  \mathbf{E}\_{1 \parallel}^{2})}
+\]</div>
+<p>带入<span class="arithmatex">\(\frac{\mathbf{E}\_{2 \parallel}^{2}}{\mathbf{E}\_{1 \parallel}^{2}} = \left|\frac{2 \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}}\right|^{2}\)</span>以及 <span class="arithmatex">\(k_{1Rz} = k_{1} \cos \theta_{1}\)</span> </p>
+<p>由于 <span class="arithmatex">\(\mathbf{k}\_{2} \cdot \mathbf{E}\_{2 \parallel} = 0\)</span> ，所以</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\Re [E_{2 \parallel z} (\mathbf{k}\_{2} \cdot \mathbf{E}\_{2 \parallel}^{*})] &amp;= - \Re [E_{2 \parallel z} (\mathbf{k}\_{2} \cdot 2 \Im [\mathbf{E}\_{2 \parallel}])] \\\\
+&amp;= - \Re [|\mathbf{E_{2 \parallel}}| \frac{k_{2z}}{ |\mathbf{k_{2}}|} (\mathbf{k}\_{2} \cdot 2 \Im [\mathbf{E}\_{2 \parallel}])]  = \mathbf{E}\_{2}^{2} \left( - \Re[k_{2} \frac{k_{2z}}{k_{2}}^{*}] + \Re[k_{2z}] \right)
+\end{aligned}
+\]</div>
+<p>得到：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\frac{\frac{1}{2 \mu_{2} \omega} (k_{2Rz} \mathbf{E}\_{2 \parallel}^{2} - \Re [E_{2 \parallel z} (\mathbf{k}\_{2} \cdot \mathbf{E}\_{2 \parallel}^{*})])}{\frac{1}{2 \mu_{1} \omega} (k_{1Rz}  \mathbf{E}\_{1 \parallel}^{2})} &amp;= \frac{\mu_{1}}{\mu_{2} k_{1} \cos \theta_{1}} \left| \frac{2 \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}} \right|^{2} \Re [k_{2} \frac{k_{2z}^{*}}{k_{2}^{*}}] \\\\
+&amp;= \frac{4 \mu_1 \cos \theta_1 \text{Re} \left( \frac{k_2 k_{2z}^*}{k_{2}^{*}} \right)}{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2}
+\end{aligned}
+\]</div>
+<div class="arithmatex">\[
+R_{\parallel} = \frac{\mathbf{S}\_{3 \parallel z}}{\mathbf{S}\_{1 \parallel z}} =  \frac{\frac{1}{2 \mu_{1} \omega} (k_{2Rz} \mathbf{E}\_{3 \parallel}^{2})}{\frac{1}{2 \mu_{1} \omega} (k_{1Rz}  \mathbf{E}\_{1 \parallel}^{2})}
+\]</div>
+<p>带入<span class="arithmatex">\(\frac{\mathbf{E}\_{3 \parallel}^{2}}{\mathbf{E}\_{1 \parallel}^{2}} = \left| \frac{- \frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}} \right|^{2}\)</span> </p>
+<p>以及 <span class="arithmatex">\(k_{1Rz} = k_{1} \cos \theta_{1}\)</span> <span class="arithmatex">\(k_{3Rz} = k_{3} \cos \theta_{1}\)</span> </p>
+<div class="arithmatex">\[
 R_{\parallel} =  \left| \frac{- \frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}} \right|^{2}
 \]</div>
 <div class="arithmatex">\[
@@ -4723,10 +4701,10 @@ D_{\parallel} + R_{\parallel} &amp;= \frac{4 \mu_1 \cos \theta_1 \text{Re} \left
 &amp;= \frac{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2}{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2} = 1
 \end{aligned}
 \]</div>
-<p>其中利用了
-$$
-(z_{1} + z_{2}) (z_{1}^{<em>} + z_{2}^{</em>}) = (z_{1} - z_{2}) (z_{1}^{<em>} - z_{2}^{</em>}) + 4 \Re [z_{1} z_{2}^{*}]
-$$</p>
+<p>其中利用了</p>
+<div class="arithmatex">\[
+(z_{1} + z_{2}) (z_{1}^{*} + z_{2}^{*}) = (z_{1} - z_{2}) (z_{1}^{*} - z_{2}^{*}) + 4 \Re [z_{1} z_{2}^{*}]
+\]</div>
 
 
 
@@ -4837,6 +4815,8 @@ $$</p>
     
     
       <script src="../../../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../../../../../custom_js/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
